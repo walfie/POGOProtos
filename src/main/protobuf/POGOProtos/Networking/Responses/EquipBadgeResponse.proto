@@ -2,9 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/Player/EquippedBadge.proto";
 
 message EquipBadgeResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.EquipBadgeResponse.Result result = 1;
 	.POGOProtos.Data.Player.EquippedBadge equipped = 2;
 

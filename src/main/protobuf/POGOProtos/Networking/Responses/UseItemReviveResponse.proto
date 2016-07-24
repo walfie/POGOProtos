@@ -2,7 +2,13 @@
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message UseItemReviveResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.UseItemReviveResponse.Result result = 1;
 	int32 stamina = 2;
 

@@ -2,6 +2,12 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message EchoResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	string context = 1;
 }

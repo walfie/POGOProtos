@@ -2,8 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 import "POGOProtos/Data/Player/ContactSettings.proto";
 
 message SetContactSettingsMessage {
+	option (scalapb.message).extends = "RequestMessage[SetContactSettingsResponse]";
 	.POGOProtos.Data.Player.ContactSettings contact_settings = 1;
 }

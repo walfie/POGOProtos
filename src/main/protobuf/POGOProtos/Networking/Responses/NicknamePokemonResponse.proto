@@ -2,7 +2,13 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message NicknamePokemonResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.NicknamePokemonResponse.Result result = 1;
 
 	enum Result {

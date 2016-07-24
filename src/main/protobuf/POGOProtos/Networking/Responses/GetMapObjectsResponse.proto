@@ -2,10 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Map/MapCell.proto";
 import "POGOProtos/Map/MapObjectsStatus.proto";
 
 message GetMapObjectsResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	repeated .POGOProtos.Map.MapCell map_cells = 1;
 	.POGOProtos.Map.MapObjectsStatus status = 2;
 }

@@ -2,6 +2,11 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Settings/Master/ItemSettings.proto";
 import "POGOProtos/Settings/Master/MoveSettings.proto";
 import "POGOProtos/Settings/Master/BadgeSettings.proto";
@@ -21,6 +26,7 @@ import "POGOProtos/Settings/Master/EquippedBadgeSettings.proto";
 
 
 message DownloadItemTemplatesResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	bool success = 1;
 	repeated .POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate item_templates = 2;
 	uint64 timestamp_ms = 3;

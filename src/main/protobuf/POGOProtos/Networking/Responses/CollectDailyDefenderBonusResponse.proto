@@ -2,7 +2,13 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message CollectDailyDefenderBonusResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse.Result result = 1;
 	repeated string currency_type = 2;
 	repeated int32 currency_awarded = 3;

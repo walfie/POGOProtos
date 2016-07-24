@@ -2,9 +2,15 @@
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Networking/Responses/FortDetailsResponse.proto";
 
 message FortRecallPokemonResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.FortRecallPokemonResponse.Result result = 1;
 	.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;
 

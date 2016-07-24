@@ -2,9 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Inventory/InventoryDelta.proto";
 
 message GetInventoryResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	bool success = 1;
 	.POGOProtos.Inventory.InventoryDelta inventory_delta = 2;
 }

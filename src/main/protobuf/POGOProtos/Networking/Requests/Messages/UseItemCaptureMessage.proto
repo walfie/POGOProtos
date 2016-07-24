@@ -2,9 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 import "POGOProtos/Inventory/Item/ItemId.proto";
 
 message UseItemCaptureMessage {
+	option (scalapb.message).extends = "RequestMessage[UseItemCaptureResponse]";
 	.POGOProtos.Inventory.Item.ItemId item_id = 1;
 	fixed64 encounter_id = 2;
 	string spawn_point_guid = 3;

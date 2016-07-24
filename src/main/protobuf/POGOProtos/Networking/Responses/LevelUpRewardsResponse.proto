@@ -2,10 +2,16 @@
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Inventory/Item/ItemId.proto";
 import "POGOProtos/Inventory/Item/ItemAward.proto";
 
 message LevelUpRewardsResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.LevelUpRewardsResponse.Result result = 1;
 	repeated .POGOProtos.Inventory.Item.ItemAward items_awarded = 2;
 	repeated .POGOProtos.Inventory.Item.ItemId items_unlocked = 4;

@@ -2,9 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Inventory/AppliedItems.proto";
 
 message UseItemXpBoostResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.UseItemXpBoostResponse.Result result = 1;
 	.POGOProtos.Inventory.AppliedItems applied_items = 2;
 

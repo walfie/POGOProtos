@@ -2,10 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/Capture/CaptureProbability.proto";
 import "POGOProtos/Map/Pokemon/WildPokemon.proto";
 
 message EncounterResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Map.Pokemon.WildPokemon wild_pokemon = 1;
 	Background background = 2;
 	Status status = 3;

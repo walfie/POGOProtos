@@ -2,8 +2,14 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 // TODO: Might be incorrect, please test.
 message CheckCodenameAvailableResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	string codename = 1;
 	string user_message = 2;
 	bool is_assignable = 3;

@@ -2,7 +2,13 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message GetIncensePokemonResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.GetIncensePokemonResponse.Result result = 1;
 	int32 pokemon_type_id = 2; // TODO: PokemonType.proto or PokemonId.proto
 	double latitude = 3;

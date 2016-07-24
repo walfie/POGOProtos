@@ -2,7 +2,13 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message UseItemCaptureResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	bool success = 1;
 	double item_capture_mult = 2;
 	double item_flee_mult = 3;

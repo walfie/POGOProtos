@@ -2,10 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/PokemonData.proto";
 import "POGOProtos/Data/Capture/CaptureProbability.proto";
 
 message IncenseEncounterResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.IncenseEncounterResponse.Result result = 1;
 	.POGOProtos.Data.PokemonData pokemon_data = 2;
 	.POGOProtos.Data.Capture.CaptureProbability capture_probability = 3;

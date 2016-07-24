@@ -2,9 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 import "POGOProtos/Enums/Platform.proto";
 
 message DownloadRemoteConfigVersionMessage {
+	option (scalapb.message).extends = "RequestMessage[DownloadRemoteConfigVersionResponse]";
 	.POGOProtos.Enums.Platform platform = 1;
 	string device_manufacturer = 2;
 	string device_model = 3;

@@ -2,7 +2,14 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 message GetInventoryMessage {
+	option (scalapb.message).extends = "RequestMessage[GetInventoryResponse]";
 	int64 last_timestamp_ms = 1;
 	int32 item_been_seen = 2; // TODO: Find out what this is.
 }

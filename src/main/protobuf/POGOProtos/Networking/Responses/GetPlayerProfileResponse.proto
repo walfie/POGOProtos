@@ -2,9 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/PlayerBadge.proto";
 
 message GetPlayerProfileResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.GetPlayerProfileResponse.Result result = 1;
 	int64 start_time = 2;
 	repeated .POGOProtos.Data.PlayerBadge badges = 3;

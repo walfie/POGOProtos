@@ -2,9 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Settings/GlobalSettings.proto";
 
 message DownloadSettingsResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	string error = 1;
 	string hash = 2;
 	.POGOProtos.Settings.GlobalSettings settings = 3;

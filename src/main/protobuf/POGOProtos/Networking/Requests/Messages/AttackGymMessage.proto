@@ -2,9 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 import "POGOProtos/Data/Battle/BattleAction.proto";
 
 message AttackGymMessage {
+	option (scalapb.message).extends = "RequestMessage[AttackGymResponse]";
 	string gym_id = 1;
 	string battle_id = 2;
 	repeated .POGOProtos.Data.Battle.BattleAction attack_actions = 3;

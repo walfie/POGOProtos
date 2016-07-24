@@ -2,9 +2,15 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/Capture/CaptureAward.proto";
 
 message CatchPokemonResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.CatchPokemonResponse.CatchStatus status = 1;
 	double miss_percent = 2;
 	fixed64 captured_pokemon_id = 3;

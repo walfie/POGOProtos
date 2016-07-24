@@ -2,7 +2,14 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 message GetGymDetailsMessage {
+	option (scalapb.message).extends = "RequestMessage[GetGymDetailsResponse]";
 	string gym_id = 1;
 	double player_latitude = 2;
 	double player_longitude = 3;

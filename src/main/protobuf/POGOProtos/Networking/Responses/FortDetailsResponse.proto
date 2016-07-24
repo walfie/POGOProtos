@@ -2,12 +2,18 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/PokemonData.proto";
 import "POGOProtos/Enums/TeamColor.proto";
 import "POGOProtos/Map/Fort/FortType.proto";
 import "POGOProtos/Map/Fort/FortModifier.proto";
 
 message FortDetailsResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	string fort_id = 1;
 	.POGOProtos.Enums.TeamColor team_color = 2;
 	.POGOProtos.Data.PokemonData pokemon_data = 3;

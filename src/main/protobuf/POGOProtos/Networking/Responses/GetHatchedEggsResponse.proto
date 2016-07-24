@@ -2,7 +2,13 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message GetHatchedEggsResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	bool success = 1;
 	repeated uint64 pokemon_id = 2 [packed=true];
 	repeated int32 experience_awarded = 3;

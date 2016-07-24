@@ -2,9 +2,16 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 import "POGOProtos/Enums/TutorialState.proto";
 
 message MarkTutorialCompleteMessage {
+	option (scalapb.message).extends = "RequestMessage[MarkTutorialCompleteResponse]";
 	repeated .POGOProtos.Enums.TutorialState tutorials_completed = 1;
 	bool send_marketing_emails = 2;
 	bool send_push_notifications = 3;

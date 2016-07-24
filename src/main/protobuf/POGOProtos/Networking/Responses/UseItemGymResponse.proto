@@ -2,7 +2,13 @@ syntax = "proto3";
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 message UseItemGymResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	POGOProtos.Networking.Responses.UseItemGymResponse.Result result = 1;
 	int64 updated_gp = 2; // Gym Points (?)
 

@@ -2,11 +2,17 @@
 package POGOProtos.Networking.Responses;
 option java_package = "pogoprotos.networking.responses";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking._"
+};
+
 import "POGOProtos/Data/PokemonData.proto";
 import "POGOProtos/Data/Gym/GymState.proto";
 import "POGOProtos/Networking/Responses/FortDetailsResponse.proto";
 
 message FortDeployPokemonResponse {
+	option (scalapb.message).extends = "ResponseMessage";
 	.POGOProtos.Networking.Responses.FortDeployPokemonResponse.Result result = 1;
 	.POGOProtos.Networking.Responses.FortDetailsResponse fort_details = 2;
 	.POGOProtos.Data.PokemonData pokemon_data = 3;

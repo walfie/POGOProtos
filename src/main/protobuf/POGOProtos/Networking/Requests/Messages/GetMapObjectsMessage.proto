@@ -2,7 +2,14 @@ syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
 option java_package = "pogoprotos.networking.requests.messages";
 
+import "scalapb/scalapb.proto";
+option (scalapb.options) = {
+	import: "pogoprotos.networking.RequestMessage"
+	import: "pogoprotos.networking.responses._"
+};
+
 message GetMapObjectsMessage {
+	option (scalapb.message).extends = "RequestMessage[GetMapObjectsResponse]";
 	repeated uint64 cell_id = 1 [packed=true];
 	repeated int64 since_timestamp_ms = 2 [packed=true];
 	double latitude = 3;
