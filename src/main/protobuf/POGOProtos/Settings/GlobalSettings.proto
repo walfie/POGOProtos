@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Settings;
+option java_package = "pogoprotos.settings";
 
 import "POGOProtos/Settings/FortSettings.proto";
 import "POGOProtos/Settings/MapSettings.proto";

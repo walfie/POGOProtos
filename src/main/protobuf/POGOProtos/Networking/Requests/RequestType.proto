@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Networking.Requests;
+option java_package = "pogoprotos.networking.requests";
 
 // R = Response
 // M = Message

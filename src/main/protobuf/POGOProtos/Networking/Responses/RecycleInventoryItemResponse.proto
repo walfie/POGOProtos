@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Networking.Responses;
+option java_package = "pogoprotos.networking.responses";
 
 message RecycleInventoryItemResponse {
 	.POGOProtos.Networking.Responses.RecycleInventoryItemResponse.Result result = 1;

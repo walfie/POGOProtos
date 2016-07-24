@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Networking.Envelopes;
+option java_package = "pogoprotos.networking.envelopes";
 
 import "POGOProtos/Networking/Requests/Request.proto";
 import "POGOProtos/Networking/Envelopes/AuthTicket.proto";

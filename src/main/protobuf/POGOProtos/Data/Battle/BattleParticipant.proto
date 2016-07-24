@@ -1,5 +1,6 @@
 ﻿syntax = "proto3";
 package POGOProtos.Data.Battle;
+option java_package = "pogoprotos.data.battle";
 
 import "POGOProtos/Data/Battle/BattlePokemonInfo.proto";
 import "POGOProtos/Data/Player/PlayerPublicProfile.proto";

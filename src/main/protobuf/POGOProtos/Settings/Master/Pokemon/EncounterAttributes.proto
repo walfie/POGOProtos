@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Settings.Master.Pokemon;
+option java_package = "pogoprotos.settings.master.pokemon";
 
 import "POGOProtos/Enums/PokemonMovementType.proto";
 

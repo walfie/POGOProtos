@@ -1,5 +1,6 @@
 ﻿syntax = "proto3";
 package POGOProtos.Networking.Envelopes;
+option java_package = "pogoprotos.networking.envelopes";
 
 message Unknown6 {
 	int32 unknown1 = 1; //6

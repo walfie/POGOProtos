@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Networking.Responses;
+option java_package = "pogoprotos.networking.responses";
 
 message NicknamePokemonResponse {
 	.POGOProtos.Networking.Responses.NicknamePokemonResponse.Result result = 1;

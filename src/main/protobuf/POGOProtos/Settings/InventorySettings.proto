@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Settings;
+option java_package = "pogoprotos.settings";
 
 message InventorySettings {
 	int32 max_pokemon = 1;

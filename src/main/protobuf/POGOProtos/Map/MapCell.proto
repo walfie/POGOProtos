@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Map;
+option java_package = "pogoprotos.map";
 
 import "POGOProtos/Map/SpawnPoint.proto";
 import "POGOProtos/Map/Fort/FortData.proto";

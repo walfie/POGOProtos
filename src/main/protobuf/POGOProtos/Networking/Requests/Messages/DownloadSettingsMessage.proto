@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Networking.Requests.Messages;
+option java_package = "pogoprotos.networking.requests.messages";
 
 message DownloadSettingsMessage {
 	string hash = 1;

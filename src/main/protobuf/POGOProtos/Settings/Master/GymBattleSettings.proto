@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Settings.Master;
+option java_package = "pogoprotos.settings.master";
 
 message GymBattleSettings {
 	float energy_per_sec = 1;

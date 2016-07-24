@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Inventory.Item;
+option java_package = "pogoprotos.inventory.item";
 
 import "POGOProtos/Inventory/Item/ItemId.proto";
 

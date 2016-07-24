@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Settings.Master;
+option java_package = "pogoprotos.settings.master";
 
 import "POGOProtos/Enums/ItemCategory.proto";
 import "POGOProtos/Inventory/Item/ItemId.proto";

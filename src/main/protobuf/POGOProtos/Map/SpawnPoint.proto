@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Map;
+option java_package = "pogoprotos.map";
 
 message SpawnPoint {
 	double latitude = 2;

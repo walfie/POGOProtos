@@ -1,5 +1,6 @@
 ﻿syntax = "proto3";
 package POGOProtos.Enums;
+option java_package = "pogoprotos.enums";
 
 enum ItemEffect {
 	ITEM_EFFECT_NONE = 0;

@@ -1,5 +1,6 @@
 syntax = "proto3";
 package POGOProtos.Map.Pokemon;
+option java_package = "pogoprotos.map.pokemon";
 
 import "POGOProtos/Enums/PokemonId.proto";
 

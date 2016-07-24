@@ -1,5 +1,6 @@
 ﻿syntax = "proto3";
 package POGOProtos.Settings.Master.Item;
+option java_package = "pogoprotos.settings.master.item";
 
 message ExperienceBoostAttributes {
 	float xp_multiplier = 1;
