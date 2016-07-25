@@ -4,11 +4,15 @@ organization := "com.github.walfie"
 
 name := "pogoprotos"
 
+// Required for publishing on Bintray
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+
 libraryDependencies ++= Seq(
   // Enable custom package options
   "com.trueaccord.scalapb" %% "scalapb-runtime" % "0.5.34" % ScalaPbPlugin.protobufConfig
 )
 
+// ScalaPB settings
 import com.trueaccord.scalapb.ScalaPbPlugin
 
 ScalaPbPlugin.protobufSettings
@@ -23,5 +27,6 @@ inConfig(ScalaPbPlugin.protobufConfig) {
   )
 }
 
+// sbt-site plugin
 enablePlugins(SiteScaladocPlugin)
 
