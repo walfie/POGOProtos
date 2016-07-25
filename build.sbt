@@ -23,3 +23,5 @@ inConfig(ScalaPbPlugin.protobufConfig) {
   )
 }
 
+enablePlugins(SiteScaladocPlugin)
+
