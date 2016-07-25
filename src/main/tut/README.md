@@ -35,7 +35,7 @@ Below is an example of constructing a `RequestEnvelope` with several requests.
 You can call `.toByteArray` on any object to convert it to an `Array[Byte]` that
 can be sent over the wire.
 
-```scala
+```tut:silent
 import pogoprotos.networking.envelopes.RequestEnvelope
 import pogoprotos.networking.requests.{Request, RequestType}
 import pogoprotos.networking.requests.messages._
@@ -81,7 +81,7 @@ As with ScalaPB, unspecified fields will be set to some default value.
 The generated companion objects of each message have `.parseFrom` (returns `T`)
 and `.validate` (returns `Try[T]`) methods.
 
-```scala
+```tut:silent
 import pogoprotos.networking.envelopes.ResponseEnvelope
 
 // Pretend this is a response we received after posting the `RequestEnvelope`
@@ -98,17 +98,10 @@ val response = ResponseEnvelope.parseFrom(bytes)
 val tryResponse = ResponseEnvelope.validate(bytes)
 ```
 
-```scala
+```tut:book
 response.statusCode
-// res11: Int = 53
-
 response.requestId
-// res12: Long = 315
-
 response.apiUrl
-// res13: String = http://example.com/
-
 response.authTicket // This is unspecified in the message, so we expect `None`
-// res14: Option[pogoprotos.networking.envelopes.AuthTicket] = None
 ```
 

@@ -27,6 +27,12 @@ inConfig(ScalaPbPlugin.protobufConfig) {
   )
 }
 
+// tut plugin
+// The only file we have is `README.md`, which we want in the root
+tutSettings
+tutNameFilter := "README\\.md".r
+tutTargetDirectory := baseDirectory.value
+
 // sbt-site plugin
 site.settings
 site.includeScaladoc()
