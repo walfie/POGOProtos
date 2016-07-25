@@ -91,17 +91,25 @@ val bytes: Array[Byte] = ResponseEnvelope().update(
   _.apiUrl := "http://example.com/"
 ).toByteArray
 
-// `parseFrom` can throw an exception of the bytes could not be deserialized
+// `parseFrom` can throw an exception if the bytes could not be deserialized
 val response = ResponseEnvelope.parseFrom(bytes)
 
 // If we're concerned with possible failure, `validate` returns a `Try[ResponseEnvelope]`
 val tryResponse = ResponseEnvelope.validate(bytes)
 ```
 
+Assuming parsing succeeded, we can check the result's fields:
+
 ```tut:book
 response.statusCode
 response.requestId
 response.apiUrl
 response.authTicket // This is unspecified in the message, so we expect `None`
+```
+
+On the other hand, if we try to parse an invalid message, we get:
+
+```tut:book
+ResponseEnvelope.validate(Array[Byte](1, 2, 3, 4, 5))
 ```
 
