@@ -30,3 +30,7 @@ inConfig(ScalaPbPlugin.protobufConfig) {
 // sbt-site plugin
 enablePlugins(SiteScaladocPlugin)
 
+// sbt-release
+import ReleaseTransformations._
+releaseProcess -= pushChanges
+
