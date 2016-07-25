@@ -1,0 +1,1966 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>CameraSettings - pogoprotos.settings.master.CameraSettings</title>
+          <meta name="description" content="CameraSettings - pogoprotos.settings.master.CameraSettings" />
+          <meta name="keywords" content="CameraSettings pogoprotos.settings.master.CameraSettings" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.settings.master.CameraSettings';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="CameraSettings$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.settings">settings</a>.<a href="package.html" class="extype" name="pogoprotos.settings.master">master</a></p>
+        <h1><a href="CameraSettings$.html" title="See companion object">CameraSettings</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="CameraSettings$.html" title="See companion object">object CameraSettings</a>
+            | <a href="package.html" class="extype" name="pogoprotos.settings.master">package master</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CameraSettings</span><span class="params">(<span name="nextCamera">nextCamera: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="interpolation">interpolation: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraInterpolation.html" class="extype" name="pogoprotos.enums.CameraInterpolation">CameraInterpolation</a>] = <span class="symbol">Nil</span></span>, <span name="targetType">targetType: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraTarget.html" class="extype" name="pogoprotos.enums.CameraTarget">CameraTarget</a>] = <span class="symbol">Nil</span></span>, <span name="easeInSpeed">easeInSpeed: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="eastOutSpeed">eastOutSpeed: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="durationSeconds">durationSeconds: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="waitSeconds">waitSeconds: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="transitionSeconds">transitionSeconds: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="angleDegree">angleDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="angleOffsetDegree">angleOffsetDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="pitchDegree">pitchDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="pitchOffsetDegree">pitchOffsetDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="rollDegree">rollDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="distanceMeters">distanceMeters: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="heightPercent">heightPercent: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="vertCtrRatio">vertCtrRatio: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>], <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>], <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="pogoprotos.settings.master.CameraSettings"><span>CameraSettings</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.trueaccord.lenses.Updatable"><span>Updatable</span></li><li class="in" name="com.trueaccord.scalapb.Message"><span>Message</span></li><li class="in" name="com.trueaccord.scalapb.GeneratedMessage"><span>GeneratedMessage</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="pogoprotos.settings.master.CameraSettings#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(nextCamera:String,interpolation:Seq[pogoprotos.enums.CameraInterpolation],targetType:Seq[pogoprotos.enums.CameraTarget],easeInSpeed:Seq[Float],eastOutSpeed:Seq[Float],durationSeconds:Seq[Float],waitSeconds:Seq[Float],transitionSeconds:Seq[Float],angleDegree:Seq[Float],angleOffsetDegree:Seq[Float],pitchDegree:Seq[Float],pitchOffsetDegree:Seq[Float],rollDegree:Seq[Float],distanceMeters:Seq[Float],heightPercent:Seq[Float],vertCtrRatio:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="&lt;init&gt;:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CameraSettings</span><span class="params">(<span name="nextCamera">nextCamera: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="interpolation">interpolation: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraInterpolation.html" class="extype" name="pogoprotos.enums.CameraInterpolation">CameraInterpolation</a>] = <span class="symbol">Nil</span></span>, <span name="targetType">targetType: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraTarget.html" class="extype" name="pogoprotos.enums.CameraTarget">CameraTarget</a>] = <span class="symbol">Nil</span></span>, <span name="easeInSpeed">easeInSpeed: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="eastOutSpeed">eastOutSpeed: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="durationSeconds">durationSeconds: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="waitSeconds">waitSeconds: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="transitionSeconds">transitionSeconds: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="angleDegree">angleDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="angleOffsetDegree">angleOffsetDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="pitchDegree">pitchDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="pitchOffsetDegree">pitchOffsetDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="rollDegree">rollDegree: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="distanceMeters">distanceMeters: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="heightPercent">heightPercent: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>, <span name="vertCtrRatio">vertCtrRatio: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>] = <span class="symbol">Nil</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@&lt;init&gt;(nextCamera:String,interpolation:Seq[pogoprotos.enums.CameraInterpolation],targetType:Seq[pogoprotos.enums.CameraTarget],easeInSpeed:Seq[Float],eastOutSpeed:Seq[Float],durationSeconds:Seq[Float],waitSeconds:Seq[Float],transitionSeconds:Seq[Float],angleDegree:Seq[Float],angleOffsetDegree:Seq[Float],pitchDegree:Seq[Float],pitchOffsetDegree:Seq[Float],rollDegree:Seq[Float],distanceMeters:Seq[Float],heightPercent:Seq[Float],vertCtrRatio:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllAngleDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllAngleDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllAngleDegree(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllAngleDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllAngleDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllAngleOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllAngleOffsetDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllAngleOffsetDegree(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllAngleOffsetDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllAngleOffsetDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllDistanceMeters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllDistanceMeters(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllDistanceMeters(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllDistanceMeters</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllDistanceMeters(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllDurationSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllDurationSeconds(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllDurationSeconds(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllDurationSeconds</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllDurationSeconds(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllEaseInSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllEaseInSpeed(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllEaseInSpeed(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllEaseInSpeed</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllEaseInSpeed(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllEastOutSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllEastOutSpeed(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllEastOutSpeed(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllEastOutSpeed</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllEastOutSpeed(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllHeightPercent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllHeightPercent(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllHeightPercent(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllHeightPercent</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllHeightPercent(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllInterpolation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllInterpolation(__vs:TraversableOnce[pogoprotos.enums.CameraInterpolation]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllInterpolation(TraversableOnce[CameraInterpolation]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllInterpolation</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="../../enums/CameraInterpolation.html" class="extype" name="pogoprotos.enums.CameraInterpolation">CameraInterpolation</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllInterpolation(__vs:TraversableOnce[pogoprotos.enums.CameraInterpolation]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllPitchDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllPitchDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllPitchDegree(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllPitchDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllPitchDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllPitchOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllPitchOffsetDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllPitchOffsetDegree(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllPitchOffsetDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllPitchOffsetDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllRollDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllRollDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllRollDegree(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllRollDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllRollDegree(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllTargetType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllTargetType(__vs:TraversableOnce[pogoprotos.enums.CameraTarget]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllTargetType(TraversableOnce[CameraTarget]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllTargetType</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="../../enums/CameraTarget.html" class="extype" name="pogoprotos.enums.CameraTarget">CameraTarget</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllTargetType(__vs:TraversableOnce[pogoprotos.enums.CameraTarget]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllTransitionSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllTransitionSeconds(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllTransitionSeconds(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllTransitionSeconds</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllTransitionSeconds(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllVertCtrRatio" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllVertCtrRatio(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllVertCtrRatio(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllVertCtrRatio</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllVertCtrRatio(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAllWaitSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllWaitSeconds(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAllWaitSeconds(TraversableOnce[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllWaitSeconds</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAllWaitSeconds(__vs:TraversableOnce[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAngleDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAngleDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAngleDegree(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAngleDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAngleDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addAngleOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAngleOffsetDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addAngleOffsetDegree(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAngleOffsetDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addAngleOffsetDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addDistanceMeters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDistanceMeters(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addDistanceMeters(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDistanceMeters</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addDistanceMeters(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addDurationSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDurationSeconds(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addDurationSeconds(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDurationSeconds</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addDurationSeconds(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addEaseInSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addEaseInSpeed(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addEaseInSpeed(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEaseInSpeed</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addEaseInSpeed(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addEastOutSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addEastOutSpeed(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addEastOutSpeed(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEastOutSpeed</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addEastOutSpeed(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addHeightPercent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addHeightPercent(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addHeightPercent(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addHeightPercent</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addHeightPercent(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addInterpolation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addInterpolation(__vs:pogoprotos.enums.CameraInterpolation*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addInterpolation(CameraInterpolation*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addInterpolation</span><span class="params">(<span name="__vs">__vs: <a href="../../enums/CameraInterpolation.html" class="extype" name="pogoprotos.enums.CameraInterpolation">CameraInterpolation</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addInterpolation(__vs:pogoprotos.enums.CameraInterpolation*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addPitchDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addPitchDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addPitchDegree(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addPitchDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addPitchDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addPitchOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addPitchOffsetDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addPitchOffsetDegree(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addPitchOffsetDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addPitchOffsetDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addRollDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addRollDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addRollDegree(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addRollDegree</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addRollDegree(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addTargetType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addTargetType(__vs:pogoprotos.enums.CameraTarget*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addTargetType(CameraTarget*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addTargetType</span><span class="params">(<span name="__vs">__vs: <a href="../../enums/CameraTarget.html" class="extype" name="pogoprotos.enums.CameraTarget">CameraTarget</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addTargetType(__vs:pogoprotos.enums.CameraTarget*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addTransitionSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addTransitionSeconds(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addTransitionSeconds(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addTransitionSeconds</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addTransitionSeconds(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addVertCtrRatio" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addVertCtrRatio(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addVertCtrRatio(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addVertCtrRatio</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addVertCtrRatio(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#addWaitSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addWaitSeconds(__vs:Float*):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="addWaitSeconds(Float*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addWaitSeconds</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Float">Float</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@addWaitSeconds(__vs:Float*):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#angleDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="angleDegree:Seq[Float]"></a>
+      <a id="angleDegree:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">angleDegree</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@angleDegree:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#angleOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="angleOffsetDegree:Seq[Float]"></a>
+      <a id="angleOffsetDegree:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">angleOffsetDegree</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@angleOffsetDegree:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearAngleDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearAngleDegree:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearAngleDegree:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearAngleDegree</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearAngleDegree:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearAngleOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearAngleOffsetDegree:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearAngleOffsetDegree:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearAngleOffsetDegree</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearAngleOffsetDegree:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearDistanceMeters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearDistanceMeters:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearDistanceMeters:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearDistanceMeters</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearDistanceMeters:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearDurationSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearDurationSeconds:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearDurationSeconds:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearDurationSeconds</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearDurationSeconds:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearEaseInSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearEaseInSpeed:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearEaseInSpeed:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearEaseInSpeed</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearEaseInSpeed:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearEastOutSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearEastOutSpeed:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearEastOutSpeed:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearEastOutSpeed</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearEastOutSpeed:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearHeightPercent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearHeightPercent:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearHeightPercent:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearHeightPercent</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearHeightPercent:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearInterpolation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearInterpolation:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearInterpolation:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearInterpolation</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearInterpolation:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearPitchDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPitchDegree:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearPitchDegree:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPitchDegree</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearPitchDegree:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearPitchOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPitchOffsetDegree:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearPitchOffsetDegree:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPitchOffsetDegree</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearPitchOffsetDegree:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearRollDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearRollDegree:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearRollDegree:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearRollDegree</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearRollDegree:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearTargetType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearTargetType:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearTargetType:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearTargetType</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearTargetType:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearTransitionSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearTransitionSeconds:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearTransitionSeconds:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearTransitionSeconds</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearTransitionSeconds:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearVertCtrRatio" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearVertCtrRatio:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearVertCtrRatio:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearVertCtrRatio</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearVertCtrRatio:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#clearWaitSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearWaitSeconds:pogoprotos.settings.master.CameraSettings"></a>
+      <a id="clearWaitSeconds:CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearWaitSeconds</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clearWaitSeconds:pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#companion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="companion:pogoprotos.settings.master.CameraSettings.type"></a>
+      <a id="companion:CameraSettings.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">companion</span><span class="result">: <a href="CameraSettings$.html" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@companion:pogoprotos.settings.master.CameraSettings.type" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#distanceMeters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="distanceMeters:Seq[Float]"></a>
+      <a id="distanceMeters:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">distanceMeters</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@distanceMeters:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#durationSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="durationSeconds:Seq[Float]"></a>
+      <a id="durationSeconds:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">durationSeconds</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@durationSeconds:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#easeInSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="easeInSpeed:Seq[Float]"></a>
+      <a id="easeInSpeed:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">easeInSpeed</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@easeInSpeed:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#eastOutSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="eastOutSpeed:Seq[Float]"></a>
+      <a id="eastOutSpeed:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eastOutSpeed</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@eastOutSpeed:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#getAllFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]"></a>
+      <a id="getAllFields:Map[FieldDescriptor,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAllFields</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#getField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any"></a>
+      <a id="getField(FieldDescriptor):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getField</span><span class="params">(<span name="__field">__field: <span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#heightPercent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="heightPercent:Seq[Float]"></a>
+      <a id="heightPercent:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">heightPercent</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@heightPercent:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#interpolation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="interpolation:Seq[pogoprotos.enums.CameraInterpolation]"></a>
+      <a id="interpolation:Seq[CameraInterpolation]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interpolation</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraInterpolation.html" class="extype" name="pogoprotos.enums.CameraInterpolation">CameraInterpolation</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@interpolation:Seq[pogoprotos.enums.CameraInterpolation]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#mergeFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="mergeFrom(CodedInputStream):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeFrom</span><span class="params">(<span name="_input__">_input__: <span class="extype" name="com.google.protobuf.CodedInputStream">CodedInputStream</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a> → Message</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#nextCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextCamera:String"></a>
+      <a id="nextCamera:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextCamera</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@nextCamera:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#pitchDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pitchDegree:Seq[Float]"></a>
+      <a id="pitchDegree:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pitchDegree</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@pitchDegree:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#pitchOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pitchOffsetDegree:Seq[Float]"></a>
+      <a id="pitchOffsetDegree:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pitchOffsetDegree</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@pitchOffsetDegree:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#rollDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rollDegree:Seq[Float]"></a>
+      <a id="rollDegree:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rollDegree</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@rollDegree:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#serializedSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serializedSize:Int"></a>
+      <a id="serializedSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serializedSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@serializedSize:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#targetType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="targetType:Seq[pogoprotos.enums.CameraTarget]"></a>
+      <a id="targetType:Seq[CameraTarget]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">targetType</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraTarget.html" class="extype" name="pogoprotos.enums.CameraTarget">CameraTarget</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@targetType:Seq[pogoprotos.enums.CameraTarget]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#toByteArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByteArray:Array[Byte]"></a>
+      <a id="toByteArray:Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@toByteArray:Array[Byte]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#transitionSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="transitionSeconds:Seq[Float]"></a>
+      <a id="transitionSeconds:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transitionSeconds</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@transitionSeconds:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.lenses.Updatable#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A"></a>
+      <a id="update((Lens[CameraSettings,CameraSettings])⇒Mutation[CameraSettings]*):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="ms">ms: (<span class="extype" name="com.trueaccord.lenses.Lens">Lens</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>, <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>]) ⇒ <span class="extype" name="com.trueaccord.lenses.Mutation">Mutation</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>]*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Updatable</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#vertCtrRatio" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="vertCtrRatio:Seq[Float]"></a>
+      <a id="vertCtrRatio:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">vertCtrRatio</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@vertCtrRatio:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#waitSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="waitSeconds:Seq[Float]"></a>
+      <a id="waitSeconds:Seq[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">waitSeconds</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@waitSeconds:Seq[Float]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withAngleDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withAngleDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withAngleDegree(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAngleDegree</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withAngleDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withAngleOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withAngleOffsetDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withAngleOffsetDegree(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAngleOffsetDegree</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withAngleOffsetDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withDistanceMeters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDistanceMeters(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withDistanceMeters(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDistanceMeters</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withDistanceMeters(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withDurationSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDurationSeconds(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withDurationSeconds(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDurationSeconds</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withDurationSeconds(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withEaseInSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withEaseInSpeed(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withEaseInSpeed(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withEaseInSpeed</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withEaseInSpeed(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withEastOutSpeed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withEastOutSpeed(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withEastOutSpeed(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withEastOutSpeed</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withEastOutSpeed(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withHeightPercent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withHeightPercent(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withHeightPercent(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withHeightPercent</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withHeightPercent(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withInterpolation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withInterpolation(__v:Seq[pogoprotos.enums.CameraInterpolation]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withInterpolation(Seq[CameraInterpolation]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withInterpolation</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraInterpolation.html" class="extype" name="pogoprotos.enums.CameraInterpolation">CameraInterpolation</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withInterpolation(__v:Seq[pogoprotos.enums.CameraInterpolation]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withNextCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withNextCamera(__v:String):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withNextCamera(String):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withNextCamera</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withNextCamera(__v:String):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withPitchDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPitchDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withPitchDegree(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPitchDegree</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withPitchDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withPitchOffsetDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPitchOffsetDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withPitchOffsetDegree(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPitchOffsetDegree</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withPitchOffsetDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withRollDegree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withRollDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withRollDegree(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withRollDegree</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withRollDegree(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withTargetType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withTargetType(__v:Seq[pogoprotos.enums.CameraTarget]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withTargetType(Seq[CameraTarget]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withTargetType</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../../enums/CameraTarget.html" class="extype" name="pogoprotos.enums.CameraTarget">CameraTarget</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withTargetType(__v:Seq[pogoprotos.enums.CameraTarget]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withTransitionSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withTransitionSeconds(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withTransitionSeconds(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withTransitionSeconds</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withTransitionSeconds(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withVertCtrRatio" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withVertCtrRatio(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withVertCtrRatio(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withVertCtrRatio</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withVertCtrRatio(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.CameraSettings#withWaitSeconds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withWaitSeconds(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings"></a>
+      <a id="withWaitSeconds(Seq[Float]):CameraSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withWaitSeconds</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Float">Float</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@withWaitSeconds(__v:Seq[Float]):pogoprotos.settings.master.CameraSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeDelimitedTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeDelimitedTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeDelimitedTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeDelimitedTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@writeDelimitedTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.CameraSettings#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit"></a>
+      <a id="writeTo(CodedOutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="_output__">_output__: <span class="extype" name="com.google.protobuf.CodedOutputStream">CodedOutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.CameraSettings@writeTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.trueaccord.lenses.Updatable">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.Message">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.settings.master.CameraSettings">CameraSettings</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.GeneratedMessage">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

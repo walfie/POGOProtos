@@ -1,0 +1,1439 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>MapCell - pogoprotos.map.MapCell</title>
+          <meta name="description" content="MapCell - pogoprotos.map.MapCell" />
+          <meta name="keywords" content="MapCell pogoprotos.map.MapCell" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'pogoprotos.map.MapCell';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="MapCell$.html" title="See companion object"><img alt="Class/Object" src="../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="package.html" class="extype" name="pogoprotos.map">map</a></p>
+        <h1><a href="MapCell$.html" title="See companion object">MapCell</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="MapCell$.html" title="See companion object">object MapCell</a>
+            | <a href="package.html" class="extype" name="pogoprotos.map">package map</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MapCell</span><span class="params">(<span name="s2CellId">s2CellId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="currentTimestampMs">currentTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="forts">forts: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>] = <span class="symbol">Nil</span></span>, <span name="spawnPoints">spawnPoints: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] = <span class="symbol">Nil</span></span>, <span name="deletedObjects">deletedObjects: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Nil</span></span>, <span name="isTruncatedList">isTruncatedList: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="fortSummaries">fortSummaries: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>] = <span class="symbol">Nil</span></span>, <span name="decimatedSpawnPoints">decimatedSpawnPoints: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] = <span class="symbol">Nil</span></span>, <span name="wildPokemons">wildPokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>] = <span class="symbol">Nil</span></span>, <span name="catchablePokemons">catchablePokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>] = <span class="symbol">Nil</span></span>, <span name="nearbyPokemons">nearbyPokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>], <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>], <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="pogoprotos.map.MapCell"><span>MapCell</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.trueaccord.lenses.Updatable"><span>Updatable</span></li><li class="in" name="com.trueaccord.scalapb.Message"><span>Message</span></li><li class="in" name="com.trueaccord.scalapb.GeneratedMessage"><span>GeneratedMessage</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="pogoprotos.map.MapCell#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(s2CellId:Long,currentTimestampMs:Long,forts:Seq[pogoprotos.map.fort.FortData],spawnPoints:Seq[pogoprotos.map.SpawnPoint],deletedObjects:Seq[String],isTruncatedList:Boolean,fortSummaries:Seq[pogoprotos.map.fort.FortSummary],decimatedSpawnPoints:Seq[pogoprotos.map.SpawnPoint],wildPokemons:Seq[pogoprotos.map.pokemon.WildPokemon],catchablePokemons:Seq[pogoprotos.map.pokemon.MapPokemon],nearbyPokemons:Seq[pogoprotos.map.pokemon.NearbyPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="&lt;init&gt;:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MapCell</span><span class="params">(<span name="s2CellId">s2CellId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="currentTimestampMs">currentTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="forts">forts: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>] = <span class="symbol">Nil</span></span>, <span name="spawnPoints">spawnPoints: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] = <span class="symbol">Nil</span></span>, <span name="deletedObjects">deletedObjects: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Nil</span></span>, <span name="isTruncatedList">isTruncatedList: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="fortSummaries">fortSummaries: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>] = <span class="symbol">Nil</span></span>, <span name="decimatedSpawnPoints">decimatedSpawnPoints: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] = <span class="symbol">Nil</span></span>, <span name="wildPokemons">wildPokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>] = <span class="symbol">Nil</span></span>, <span name="catchablePokemons">catchablePokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>] = <span class="symbol">Nil</span></span>, <span name="nearbyPokemons">nearbyPokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>] = <span class="symbol">Nil</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@&lt;init&gt;(s2CellId:Long,currentTimestampMs:Long,forts:Seq[pogoprotos.map.fort.FortData],spawnPoints:Seq[pogoprotos.map.SpawnPoint],deletedObjects:Seq[String],isTruncatedList:Boolean,fortSummaries:Seq[pogoprotos.map.fort.FortSummary],decimatedSpawnPoints:Seq[pogoprotos.map.SpawnPoint],wildPokemons:Seq[pogoprotos.map.pokemon.WildPokemon],catchablePokemons:Seq[pogoprotos.map.pokemon.MapPokemon],nearbyPokemons:Seq[pogoprotos.map.pokemon.NearbyPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#addAllCatchablePokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllCatchablePokemons(__vs:TraversableOnce[pogoprotos.map.pokemon.MapPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="addAllCatchablePokemons(TraversableOnce[MapPokemon]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllCatchablePokemons</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllCatchablePokemons(__vs:TraversableOnce[pogoprotos.map.pokemon.MapPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllDecimatedSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllDecimatedSpawnPoints(__vs:TraversableOnce[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell"></a>
+      <a id="addAllDecimatedSpawnPoints(TraversableOnce[SpawnPoint]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllDecimatedSpawnPoints</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllDecimatedSpawnPoints(__vs:TraversableOnce[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllDeletedObjects" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllDeletedObjects(__vs:TraversableOnce[String]):pogoprotos.map.MapCell"></a>
+      <a id="addAllDeletedObjects(TraversableOnce[String]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllDeletedObjects</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllDeletedObjects(__vs:TraversableOnce[String]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllFortSummaries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllFortSummaries(__vs:TraversableOnce[pogoprotos.map.fort.FortSummary]):pogoprotos.map.MapCell"></a>
+      <a id="addAllFortSummaries(TraversableOnce[FortSummary]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllFortSummaries</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllFortSummaries(__vs:TraversableOnce[pogoprotos.map.fort.FortSummary]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllForts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllForts(__vs:TraversableOnce[pogoprotos.map.fort.FortData]):pogoprotos.map.MapCell"></a>
+      <a id="addAllForts(TraversableOnce[FortData]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllForts</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllForts(__vs:TraversableOnce[pogoprotos.map.fort.FortData]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllNearbyPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllNearbyPokemons(__vs:TraversableOnce[pogoprotos.map.pokemon.NearbyPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="addAllNearbyPokemons(TraversableOnce[NearbyPokemon]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllNearbyPokemons</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllNearbyPokemons(__vs:TraversableOnce[pogoprotos.map.pokemon.NearbyPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllSpawnPoints(__vs:TraversableOnce[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell"></a>
+      <a id="addAllSpawnPoints(TraversableOnce[SpawnPoint]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllSpawnPoints</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllSpawnPoints(__vs:TraversableOnce[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addAllWildPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllWildPokemons(__vs:TraversableOnce[pogoprotos.map.pokemon.WildPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="addAllWildPokemons(TraversableOnce[WildPokemon]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllWildPokemons</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addAllWildPokemons(__vs:TraversableOnce[pogoprotos.map.pokemon.WildPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addCatchablePokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCatchablePokemons(__vs:pogoprotos.map.pokemon.MapPokemon*):pogoprotos.map.MapCell"></a>
+      <a id="addCatchablePokemons(MapPokemon*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCatchablePokemons</span><span class="params">(<span name="__vs">__vs: <a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addCatchablePokemons(__vs:pogoprotos.map.pokemon.MapPokemon*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addDecimatedSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDecimatedSpawnPoints(__vs:pogoprotos.map.SpawnPoint*):pogoprotos.map.MapCell"></a>
+      <a id="addDecimatedSpawnPoints(SpawnPoint*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDecimatedSpawnPoints</span><span class="params">(<span name="__vs">__vs: <a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addDecimatedSpawnPoints(__vs:pogoprotos.map.SpawnPoint*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addDeletedObjects" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDeletedObjects(__vs:String*):pogoprotos.map.MapCell"></a>
+      <a id="addDeletedObjects(String*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDeletedObjects</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addDeletedObjects(__vs:String*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addFortSummaries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addFortSummaries(__vs:pogoprotos.map.fort.FortSummary*):pogoprotos.map.MapCell"></a>
+      <a id="addFortSummaries(FortSummary*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addFortSummaries</span><span class="params">(<span name="__vs">__vs: <a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addFortSummaries(__vs:pogoprotos.map.fort.FortSummary*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addForts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addForts(__vs:pogoprotos.map.fort.FortData*):pogoprotos.map.MapCell"></a>
+      <a id="addForts(FortData*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addForts</span><span class="params">(<span name="__vs">__vs: <a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addForts(__vs:pogoprotos.map.fort.FortData*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addNearbyPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addNearbyPokemons(__vs:pogoprotos.map.pokemon.NearbyPokemon*):pogoprotos.map.MapCell"></a>
+      <a id="addNearbyPokemons(NearbyPokemon*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addNearbyPokemons</span><span class="params">(<span name="__vs">__vs: <a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addNearbyPokemons(__vs:pogoprotos.map.pokemon.NearbyPokemon*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addSpawnPoints(__vs:pogoprotos.map.SpawnPoint*):pogoprotos.map.MapCell"></a>
+      <a id="addSpawnPoints(SpawnPoint*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addSpawnPoints</span><span class="params">(<span name="__vs">__vs: <a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addSpawnPoints(__vs:pogoprotos.map.SpawnPoint*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#addWildPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addWildPokemons(__vs:pogoprotos.map.pokemon.WildPokemon*):pogoprotos.map.MapCell"></a>
+      <a id="addWildPokemons(WildPokemon*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addWildPokemons</span><span class="params">(<span name="__vs">__vs: <a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@addWildPokemons(__vs:pogoprotos.map.pokemon.WildPokemon*):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#catchablePokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="catchablePokemons:Seq[pogoprotos.map.pokemon.MapPokemon]"></a>
+      <a id="catchablePokemons:Seq[MapPokemon]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">catchablePokemons</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@catchablePokemons:Seq[pogoprotos.map.pokemon.MapPokemon]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearCatchablePokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearCatchablePokemons:pogoprotos.map.MapCell"></a>
+      <a id="clearCatchablePokemons:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearCatchablePokemons</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearCatchablePokemons:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearDecimatedSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearDecimatedSpawnPoints:pogoprotos.map.MapCell"></a>
+      <a id="clearDecimatedSpawnPoints:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearDecimatedSpawnPoints</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearDecimatedSpawnPoints:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearDeletedObjects" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearDeletedObjects:pogoprotos.map.MapCell"></a>
+      <a id="clearDeletedObjects:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearDeletedObjects</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearDeletedObjects:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearFortSummaries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearFortSummaries:pogoprotos.map.MapCell"></a>
+      <a id="clearFortSummaries:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearFortSummaries</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearFortSummaries:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearForts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearForts:pogoprotos.map.MapCell"></a>
+      <a id="clearForts:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearForts</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearForts:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearNearbyPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearNearbyPokemons:pogoprotos.map.MapCell"></a>
+      <a id="clearNearbyPokemons:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearNearbyPokemons</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearNearbyPokemons:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearSpawnPoints:pogoprotos.map.MapCell"></a>
+      <a id="clearSpawnPoints:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearSpawnPoints</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearSpawnPoints:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#clearWildPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearWildPokemons:pogoprotos.map.MapCell"></a>
+      <a id="clearWildPokemons:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearWildPokemons</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clearWildPokemons:pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#companion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="companion:pogoprotos.map.MapCell.type"></a>
+      <a id="companion:MapCell.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">companion</span><span class="result">: <a href="MapCell$.html" class="extype" name="pogoprotos.map.MapCell">MapCell</a>.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@companion:pogoprotos.map.MapCell.type" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#currentTimestampMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="currentTimestampMs:Long"></a>
+      <a id="currentTimestampMs:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentTimestampMs</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@currentTimestampMs:Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#decimatedSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="decimatedSpawnPoints:Seq[pogoprotos.map.SpawnPoint]"></a>
+      <a id="decimatedSpawnPoints:Seq[SpawnPoint]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">decimatedSpawnPoints</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@decimatedSpawnPoints:Seq[pogoprotos.map.SpawnPoint]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#deletedObjects" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deletedObjects:Seq[String]"></a>
+      <a id="deletedObjects:Seq[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deletedObjects</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@deletedObjects:Seq[String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#fortSummaries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fortSummaries:Seq[pogoprotos.map.fort.FortSummary]"></a>
+      <a id="fortSummaries:Seq[FortSummary]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fortSummaries</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@fortSummaries:Seq[pogoprotos.map.fort.FortSummary]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#forts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="forts:Seq[pogoprotos.map.fort.FortData]"></a>
+      <a id="forts:Seq[FortData]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forts</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@forts:Seq[pogoprotos.map.fort.FortData]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#getAllFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]"></a>
+      <a id="getAllFields:Map[FieldDescriptor,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAllFields</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#getField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any"></a>
+      <a id="getField(FieldDescriptor):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getField</span><span class="params">(<span name="__field">__field: <span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#isTruncatedList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isTruncatedList:Boolean"></a>
+      <a id="isTruncatedList:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTruncatedList</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@isTruncatedList:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#mergeFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.map.MapCell"></a>
+      <a id="mergeFrom(CodedInputStream):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeFrom</span><span class="params">(<span name="_input__">_input__: <span class="extype" name="com.google.protobuf.CodedInputStream">CodedInputStream</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a> → Message</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#nearbyPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nearbyPokemons:Seq[pogoprotos.map.pokemon.NearbyPokemon]"></a>
+      <a id="nearbyPokemons:Seq[NearbyPokemon]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nearbyPokemons</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@nearbyPokemons:Seq[pogoprotos.map.pokemon.NearbyPokemon]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#s2CellId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="s2CellId:Long"></a>
+      <a id="s2CellId:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">s2CellId</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@s2CellId:Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#serializedSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serializedSize:Int"></a>
+      <a id="serializedSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serializedSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@serializedSize:Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#spawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="spawnPoints:Seq[pogoprotos.map.SpawnPoint]"></a>
+      <a id="spawnPoints:Seq[SpawnPoint]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">spawnPoints</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@spawnPoints:Seq[pogoprotos.map.SpawnPoint]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#toByteArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByteArray:Array[Byte]"></a>
+      <a id="toByteArray:Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@toByteArray:Array[Byte]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="com.trueaccord.lenses.Updatable#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A"></a>
+      <a id="update((Lens[MapCell,MapCell])⇒Mutation[MapCell]*):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="ms">ms: (<span class="extype" name="com.trueaccord.lenses.Lens">Lens</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>, <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>]) ⇒ <span class="extype" name="com.trueaccord.lenses.Mutation">Mutation</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>]*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Updatable</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#wildPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="wildPokemons:Seq[pogoprotos.map.pokemon.WildPokemon]"></a>
+      <a id="wildPokemons:Seq[WildPokemon]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wildPokemons</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@wildPokemons:Seq[pogoprotos.map.pokemon.WildPokemon]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withCatchablePokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withCatchablePokemons(__v:Seq[pogoprotos.map.pokemon.MapPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="withCatchablePokemons(Seq[MapPokemon]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withCatchablePokemons</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withCatchablePokemons(__v:Seq[pogoprotos.map.pokemon.MapPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withCurrentTimestampMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withCurrentTimestampMs(__v:Long):pogoprotos.map.MapCell"></a>
+      <a id="withCurrentTimestampMs(Long):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withCurrentTimestampMs</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withCurrentTimestampMs(__v:Long):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withDecimatedSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDecimatedSpawnPoints(__v:Seq[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell"></a>
+      <a id="withDecimatedSpawnPoints(Seq[SpawnPoint]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDecimatedSpawnPoints</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withDecimatedSpawnPoints(__v:Seq[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withDeletedObjects" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDeletedObjects(__v:Seq[String]):pogoprotos.map.MapCell"></a>
+      <a id="withDeletedObjects(Seq[String]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDeletedObjects</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withDeletedObjects(__v:Seq[String]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withFortSummaries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withFortSummaries(__v:Seq[pogoprotos.map.fort.FortSummary]):pogoprotos.map.MapCell"></a>
+      <a id="withFortSummaries(Seq[FortSummary]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withFortSummaries</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withFortSummaries(__v:Seq[pogoprotos.map.fort.FortSummary]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withForts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withForts(__v:Seq[pogoprotos.map.fort.FortData]):pogoprotos.map.MapCell"></a>
+      <a id="withForts(Seq[FortData]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withForts</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withForts(__v:Seq[pogoprotos.map.fort.FortData]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withIsTruncatedList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withIsTruncatedList(__v:Boolean):pogoprotos.map.MapCell"></a>
+      <a id="withIsTruncatedList(Boolean):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withIsTruncatedList</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withIsTruncatedList(__v:Boolean):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withNearbyPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withNearbyPokemons(__v:Seq[pogoprotos.map.pokemon.NearbyPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="withNearbyPokemons(Seq[NearbyPokemon]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withNearbyPokemons</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withNearbyPokemons(__v:Seq[pogoprotos.map.pokemon.NearbyPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withS2CellId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withS2CellId(__v:Long):pogoprotos.map.MapCell"></a>
+      <a id="withS2CellId(Long):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withS2CellId</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withS2CellId(__v:Long):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withSpawnPoints(__v:Seq[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell"></a>
+      <a id="withSpawnPoints(Seq[SpawnPoint]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSpawnPoints</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withSpawnPoints(__v:Seq[pogoprotos.map.SpawnPoint]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCell#withWildPokemons" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withWildPokemons(__v:Seq[pogoprotos.map.pokemon.WildPokemon]):pogoprotos.map.MapCell"></a>
+      <a id="withWildPokemons(Seq[WildPokemon]):MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withWildPokemons</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@withWildPokemons(__v:Seq[pogoprotos.map.pokemon.WildPokemon]):pogoprotos.map.MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeDelimitedTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeDelimitedTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeDelimitedTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeDelimitedTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@writeDelimitedTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.MapCell#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit"></a>
+      <a id="writeTo(CodedOutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="_output__">_output__: <span class="extype" name="com.google.protobuf.CodedOutputStream">CodedOutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.MapCell@writeTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.trueaccord.lenses.Updatable">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.Message">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.map.MapCell">MapCell</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.GeneratedMessage">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

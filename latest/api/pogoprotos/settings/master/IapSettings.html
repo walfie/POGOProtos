@@ -1,0 +1,997 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>IapSettings - pogoprotos.settings.master.IapSettings</title>
+          <meta name="description" content="IapSettings - pogoprotos.settings.master.IapSettings" />
+          <meta name="keywords" content="IapSettings pogoprotos.settings.master.IapSettings" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.settings.master.IapSettings';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="IapSettings$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.settings">settings</a>.<a href="package.html" class="extype" name="pogoprotos.settings.master">master</a></p>
+        <h1><a href="IapSettings$.html" title="See companion object">IapSettings</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="IapSettings$.html" title="See companion object">object IapSettings</a>
+            | <a href="package.html" class="extype" name="pogoprotos.settings.master">package master</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IapSettings</span><span class="params">(<span name="dailyBonusCoins">dailyBonusCoins: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="dailyDefenderBonusPerPokemon">dailyDefenderBonusPerPokemon: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">Nil</span></span>, <span name="dailyDefenderBonusMaxDefenders">dailyDefenderBonusMaxDefenders: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="dailyDefenderBonusCurrency">dailyDefenderBonusCurrency: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Nil</span></span>, <span name="minTimeBetweenClaimsMs">minTimeBetweenClaimsMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="dailyBonusEnabled">dailyBonusEnabled: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="dailyDefenderBonusEnabled">dailyDefenderBonusEnabled: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>], <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>], <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="pogoprotos.settings.master.IapSettings"><span>IapSettings</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.trueaccord.lenses.Updatable"><span>Updatable</span></li><li class="in" name="com.trueaccord.scalapb.Message"><span>Message</span></li><li class="in" name="com.trueaccord.scalapb.GeneratedMessage"><span>GeneratedMessage</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="pogoprotos.settings.master.IapSettings#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(dailyBonusCoins:Int,dailyDefenderBonusPerPokemon:Seq[Int],dailyDefenderBonusMaxDefenders:Int,dailyDefenderBonusCurrency:Seq[String],minTimeBetweenClaimsMs:Long,dailyBonusEnabled:Boolean,dailyDefenderBonusEnabled:Boolean):pogoprotos.settings.master.IapSettings"></a>
+      <a id="&lt;init&gt;:IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IapSettings</span><span class="params">(<span name="dailyBonusCoins">dailyBonusCoins: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="dailyDefenderBonusPerPokemon">dailyDefenderBonusPerPokemon: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">Nil</span></span>, <span name="dailyDefenderBonusMaxDefenders">dailyDefenderBonusMaxDefenders: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="dailyDefenderBonusCurrency">dailyDefenderBonusCurrency: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Nil</span></span>, <span name="minTimeBetweenClaimsMs">minTimeBetweenClaimsMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="dailyBonusEnabled">dailyBonusEnabled: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="dailyDefenderBonusEnabled">dailyDefenderBonusEnabled: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@&lt;init&gt;(dailyBonusCoins:Int,dailyDefenderBonusPerPokemon:Seq[Int],dailyDefenderBonusMaxDefenders:Int,dailyDefenderBonusCurrency:Seq[String],minTimeBetweenClaimsMs:Long,dailyBonusEnabled:Boolean,dailyDefenderBonusEnabled:Boolean):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#addAllDailyDefenderBonusCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllDailyDefenderBonusCurrency(__vs:TraversableOnce[String]):pogoprotos.settings.master.IapSettings"></a>
+      <a id="addAllDailyDefenderBonusCurrency(TraversableOnce[String]):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllDailyDefenderBonusCurrency</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@addAllDailyDefenderBonusCurrency(__vs:TraversableOnce[String]):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#addAllDailyDefenderBonusPerPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addAllDailyDefenderBonusPerPokemon(__vs:TraversableOnce[Int]):pogoprotos.settings.master.IapSettings"></a>
+      <a id="addAllDailyDefenderBonusPerPokemon(TraversableOnce[Int]):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addAllDailyDefenderBonusPerPokemon</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@addAllDailyDefenderBonusPerPokemon(__vs:TraversableOnce[Int]):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#addDailyDefenderBonusCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDailyDefenderBonusCurrency(__vs:String*):pogoprotos.settings.master.IapSettings"></a>
+      <a id="addDailyDefenderBonusCurrency(String*):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDailyDefenderBonusCurrency</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@addDailyDefenderBonusCurrency(__vs:String*):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#addDailyDefenderBonusPerPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDailyDefenderBonusPerPokemon(__vs:Int*):pogoprotos.settings.master.IapSettings"></a>
+      <a id="addDailyDefenderBonusPerPokemon(Int*):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDailyDefenderBonusPerPokemon</span><span class="params">(<span name="__vs">__vs: <span class="extype" name="scala.Int">Int</span>*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@addDailyDefenderBonusPerPokemon(__vs:Int*):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#clearDailyDefenderBonusCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearDailyDefenderBonusCurrency:pogoprotos.settings.master.IapSettings"></a>
+      <a id="clearDailyDefenderBonusCurrency:IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearDailyDefenderBonusCurrency</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@clearDailyDefenderBonusCurrency:pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#clearDailyDefenderBonusPerPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearDailyDefenderBonusPerPokemon:pogoprotos.settings.master.IapSettings"></a>
+      <a id="clearDailyDefenderBonusPerPokemon:IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearDailyDefenderBonusPerPokemon</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@clearDailyDefenderBonusPerPokemon:pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#companion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="companion:pogoprotos.settings.master.IapSettings.type"></a>
+      <a id="companion:IapSettings.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">companion</span><span class="result">: <a href="IapSettings$.html" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@companion:pogoprotos.settings.master.IapSettings.type" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#dailyBonusCoins" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dailyBonusCoins:Int"></a>
+      <a id="dailyBonusCoins:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dailyBonusCoins</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@dailyBonusCoins:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#dailyBonusEnabled" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dailyBonusEnabled:Boolean"></a>
+      <a id="dailyBonusEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dailyBonusEnabled</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@dailyBonusEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#dailyDefenderBonusCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dailyDefenderBonusCurrency:Seq[String]"></a>
+      <a id="dailyDefenderBonusCurrency:Seq[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dailyDefenderBonusCurrency</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@dailyDefenderBonusCurrency:Seq[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#dailyDefenderBonusEnabled" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dailyDefenderBonusEnabled:Boolean"></a>
+      <a id="dailyDefenderBonusEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dailyDefenderBonusEnabled</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@dailyDefenderBonusEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#dailyDefenderBonusMaxDefenders" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dailyDefenderBonusMaxDefenders:Int"></a>
+      <a id="dailyDefenderBonusMaxDefenders:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dailyDefenderBonusMaxDefenders</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@dailyDefenderBonusMaxDefenders:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#dailyDefenderBonusPerPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dailyDefenderBonusPerPokemon:Seq[Int]"></a>
+      <a id="dailyDefenderBonusPerPokemon:Seq[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dailyDefenderBonusPerPokemon</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@dailyDefenderBonusPerPokemon:Seq[Int]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#getAllFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]"></a>
+      <a id="getAllFields:Map[FieldDescriptor,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAllFields</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#getField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any"></a>
+      <a id="getField(FieldDescriptor):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getField</span><span class="params">(<span name="__field">__field: <span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#mergeFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.settings.master.IapSettings"></a>
+      <a id="mergeFrom(CodedInputStream):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeFrom</span><span class="params">(<span name="_input__">_input__: <span class="extype" name="com.google.protobuf.CodedInputStream">CodedInputStream</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a> → Message</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#minTimeBetweenClaimsMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minTimeBetweenClaimsMs:Long"></a>
+      <a id="minTimeBetweenClaimsMs:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minTimeBetweenClaimsMs</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@minTimeBetweenClaimsMs:Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#serializedSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serializedSize:Int"></a>
+      <a id="serializedSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serializedSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@serializedSize:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#toByteArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByteArray:Array[Byte]"></a>
+      <a id="toByteArray:Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@toByteArray:Array[Byte]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="com.trueaccord.lenses.Updatable#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A"></a>
+      <a id="update((Lens[IapSettings,IapSettings])⇒Mutation[IapSettings]*):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="ms">ms: (<span class="extype" name="com.trueaccord.lenses.Lens">Lens</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>, <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>]) ⇒ <span class="extype" name="com.trueaccord.lenses.Mutation">Mutation</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>]*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Updatable</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#withDailyBonusCoins" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDailyBonusCoins(__v:Int):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withDailyBonusCoins(Int):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDailyBonusCoins</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withDailyBonusCoins(__v:Int):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#withDailyBonusEnabled" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDailyBonusEnabled(__v:Boolean):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withDailyBonusEnabled(Boolean):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDailyBonusEnabled</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withDailyBonusEnabled(__v:Boolean):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#withDailyDefenderBonusCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDailyDefenderBonusCurrency(__v:Seq[String]):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withDailyDefenderBonusCurrency(Seq[String]):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDailyDefenderBonusCurrency</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withDailyDefenderBonusCurrency(__v:Seq[String]):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#withDailyDefenderBonusEnabled" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDailyDefenderBonusEnabled(__v:Boolean):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withDailyDefenderBonusEnabled(Boolean):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDailyDefenderBonusEnabled</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withDailyDefenderBonusEnabled(__v:Boolean):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#withDailyDefenderBonusMaxDefenders" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDailyDefenderBonusMaxDefenders(__v:Int):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withDailyDefenderBonusMaxDefenders(Int):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDailyDefenderBonusMaxDefenders</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withDailyDefenderBonusMaxDefenders(__v:Int):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#withDailyDefenderBonusPerPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDailyDefenderBonusPerPokemon(__v:Seq[Int]):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withDailyDefenderBonusPerPokemon(Seq[Int]):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDailyDefenderBonusPerPokemon</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withDailyDefenderBonusPerPokemon(__v:Seq[Int]):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.settings.master.IapSettings#withMinTimeBetweenClaimsMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withMinTimeBetweenClaimsMs(__v:Long):pogoprotos.settings.master.IapSettings"></a>
+      <a id="withMinTimeBetweenClaimsMs(Long):IapSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMinTimeBetweenClaimsMs</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@withMinTimeBetweenClaimsMs(__v:Long):pogoprotos.settings.master.IapSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeDelimitedTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeDelimitedTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeDelimitedTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeDelimitedTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@writeDelimitedTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.settings.master.IapSettings#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit"></a>
+      <a id="writeTo(CodedOutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="_output__">_output__: <span class="extype" name="com.google.protobuf.CodedOutputStream">CodedOutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.settings.master.IapSettings@writeTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.trueaccord.lenses.Updatable">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.Message">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.settings.master.IapSettings">IapSettings</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.GeneratedMessage">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

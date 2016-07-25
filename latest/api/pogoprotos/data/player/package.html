@@ -1,0 +1,590 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>player - pogoprotos.data.player</title>
+          <meta name="description" content="player - pogoprotos.data.player" />
+          <meta name="keywords" content="player pogoprotos.data.player" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.data.player.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.data">data</a></p>
+        <h1>player</h1><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">player</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="pogoprotos.data.player.ContactSettings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ContactSettingsextendsGeneratedMessagewithMessage[pogoprotos.data.player.ContactSettings]withUpdatable[pogoprotos.data.player.ContactSettings]withProductwithSerializable"></a>
+      <a id="ContactSettings:ContactSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ContactSettings.html"><span class="name">ContactSettings</span></a><span class="params">(<span name="sendMarketingEmails">sendMarketingEmails: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="sendPushNotifications">sendPushNotifications: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="ContactSettings.html" class="extype" name="pogoprotos.data.player.ContactSettings">ContactSettings</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="ContactSettings.html" class="extype" name="pogoprotos.data.player.ContactSettings">ContactSettings</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@ContactSettingsextendsGeneratedMessagewithMessage[pogoprotos.data.player.ContactSettings]withUpdatable[pogoprotos.data.player.ContactSettings]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.Currency" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CurrencyextendsGeneratedMessagewithMessage[pogoprotos.data.player.Currency]withUpdatable[pogoprotos.data.player.Currency]withProductwithSerializable"></a>
+      <a id="Currency:Currency"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Currency.html"><span class="name">Currency</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="amount">amount: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="Currency.html" class="extype" name="pogoprotos.data.player.Currency">Currency</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="Currency.html" class="extype" name="pogoprotos.data.player.Currency">Currency</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@CurrencyextendsGeneratedMessagewithMessage[pogoprotos.data.player.Currency]withUpdatable[pogoprotos.data.player.Currency]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.DailyBonus" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DailyBonusextendsGeneratedMessagewithMessage[pogoprotos.data.player.DailyBonus]withUpdatable[pogoprotos.data.player.DailyBonus]withProductwithSerializable"></a>
+      <a id="DailyBonus:DailyBonus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DailyBonus.html"><span class="name">DailyBonus</span></a><span class="params">(<span name="nextCollectedTimestampMs">nextCollectedTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="nextDefenderBonusCollectTimestampMs">nextDefenderBonusCollectTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="DailyBonus.html" class="extype" name="pogoprotos.data.player.DailyBonus">DailyBonus</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="DailyBonus.html" class="extype" name="pogoprotos.data.player.DailyBonus">DailyBonus</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@DailyBonusextendsGeneratedMessagewithMessage[pogoprotos.data.player.DailyBonus]withUpdatable[pogoprotos.data.player.DailyBonus]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.EquippedBadge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EquippedBadgeextendsGeneratedMessagewithMessage[pogoprotos.data.player.EquippedBadge]withUpdatable[pogoprotos.data.player.EquippedBadge]withProductwithSerializable"></a>
+      <a id="EquippedBadge:EquippedBadge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EquippedBadge.html"><span class="name">EquippedBadge</span></a><span class="params">(<span name="badgeType">badgeType: <a href="../../enums/BadgeType.html" class="extype" name="pogoprotos.enums.BadgeType">BadgeType</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.enums.BadgeType.BADGE_UNSET</a></span>'>...</span></span>, <span name="level">level: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="nextEquipChangeAllowedTimestampMs">nextEquipChangeAllowedTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="EquippedBadge.html" class="extype" name="pogoprotos.data.player.EquippedBadge">EquippedBadge</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="EquippedBadge.html" class="extype" name="pogoprotos.data.player.EquippedBadge">EquippedBadge</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@EquippedBadgeextendsGeneratedMessagewithMessage[pogoprotos.data.player.EquippedBadge]withUpdatable[pogoprotos.data.player.EquippedBadge]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.PlayerAvatar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PlayerAvatarextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerAvatar]withUpdatable[pogoprotos.data.player.PlayerAvatar]withProductwithSerializable"></a>
+      <a id="PlayerAvatar:PlayerAvatar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerAvatar.html"><span class="name">PlayerAvatar</span></a><span class="params">(<span name="skin">skin: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="hair">hair: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="shirt">shirt: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pants">pants: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="hat">hat: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="shoes">shoes: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="gender">gender: <a href="../../enums/Gender.html" class="extype" name="pogoprotos.enums.Gender">Gender</a> = <span class="symbol"><span class="name"><a href="../../package.html">pogoprotos.enums.Gender.MALE</a></span></span></span>, <span name="eyes">eyes: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="backpack">backpack: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="PlayerAvatar.html" class="extype" name="pogoprotos.data.player.PlayerAvatar">PlayerAvatar</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="PlayerAvatar.html" class="extype" name="pogoprotos.data.player.PlayerAvatar">PlayerAvatar</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerAvatarextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerAvatar]withUpdatable[pogoprotos.data.player.PlayerAvatar]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.PlayerCamera" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PlayerCameraextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerCamera]withUpdatable[pogoprotos.data.player.PlayerCamera]withProductwithSerializable"></a>
+      <a id="PlayerCamera:PlayerCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerCamera.html"><span class="name">PlayerCamera</span></a><span class="params">(<span name="isDefaultCamera">isDefaultCamera: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerCameraextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerCamera]withUpdatable[pogoprotos.data.player.PlayerCamera]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.PlayerCurrency" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PlayerCurrencyextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerCurrency]withUpdatable[pogoprotos.data.player.PlayerCurrency]withProductwithSerializable"></a>
+      <a id="PlayerCurrency:PlayerCurrency"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerCurrency.html"><span class="name">PlayerCurrency</span></a><span class="params">(<span name="gems">gems: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerCurrencyextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerCurrency]withUpdatable[pogoprotos.data.player.PlayerCurrency]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.PlayerPublicProfile" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PlayerPublicProfileextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerPublicProfile]withUpdatable[pogoprotos.data.player.PlayerPublicProfile]withProductwithSerializable"></a>
+      <a id="PlayerPublicProfile:PlayerPublicProfile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerPublicProfile.html"><span class="name">PlayerPublicProfile</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="level">level: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="avatar">avatar: <span class="extype" name="scala.Option">Option</span>[<a href="PlayerAvatar.html" class="extype" name="pogoprotos.data.player.PlayerAvatar">PlayerAvatar</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="PlayerPublicProfile.html" class="extype" name="pogoprotos.data.player.PlayerPublicProfile">PlayerPublicProfile</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="PlayerPublicProfile.html" class="extype" name="pogoprotos.data.player.PlayerPublicProfile">PlayerPublicProfile</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerPublicProfileextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerPublicProfile]withUpdatable[pogoprotos.data.player.PlayerPublicProfile]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.player.PlayerStats" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PlayerStatsextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerStats]withUpdatable[pogoprotos.data.player.PlayerStats]withProductwithSerializable"></a>
+      <a id="PlayerStats:PlayerStats"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerStats.html"><span class="name">PlayerStats</span></a><span class="params">(<span name="level">level: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="experience">experience: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="prevLevelXp">prevLevelXp: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="nextLevelXp">nextLevelXp: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="kmWalked">kmWalked: <span class="extype" name="scala.Float">Float</span> = <span class="symbol">0.0f</span></span>, <span name="pokemonsEncountered">pokemonsEncountered: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="uniquePokedexEntries">uniquePokedexEntries: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pokemonsCaptured">pokemonsCaptured: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="evolutions">evolutions: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pokeStopVisits">pokeStopVisits: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pokeballsThrown">pokeballsThrown: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="eggsHatched">eggsHatched: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="bigMagikarpCaught">bigMagikarpCaught: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="battleAttackWon">battleAttackWon: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="battleAttackTotal">battleAttackTotal: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="battleDefendedWon">battleDefendedWon: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="battleTrainingWon">battleTrainingWon: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="battleTrainingTotal">battleTrainingTotal: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="prestigeRaisedTotal">prestigeRaisedTotal: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="prestigeDroppedTotal">prestigeDroppedTotal: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pokemonDeployed">pokemonDeployed: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pokemonCaughtByType">pokemonCaughtByType: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span> = <span class="defval" name="com.google.protobuf.ByteString.EMPTY">...</span></span>, <span name="smallRattataCaught">smallRattataCaught: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerStatsextendsGeneratedMessagewithMessage[pogoprotos.data.player.PlayerStats]withUpdatable[pogoprotos.data.player.PlayerStats]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="pogoprotos.data.player.ContactSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ContactSettings"></a>
+      <a id="ContactSettings:ContactSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ContactSettings$.html"><span class="name">ContactSettings</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="ContactSettings.html" class="extype" name="pogoprotos.data.player.ContactSettings">ContactSettings</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@ContactSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.ContactSettingsProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ContactSettingsProto"></a>
+      <a id="ContactSettingsProto:ContactSettingsProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ContactSettingsProto$.html"><span class="name">ContactSettingsProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@ContactSettingsProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.Currency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Currency"></a>
+      <a id="Currency:Currency"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Currency$.html"><span class="name">Currency</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="Currency.html" class="extype" name="pogoprotos.data.player.Currency">Currency</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@Currency" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.CurrencyProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CurrencyProto"></a>
+      <a id="CurrencyProto:CurrencyProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CurrencyProto$.html"><span class="name">CurrencyProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@CurrencyProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.DailyBonus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DailyBonus"></a>
+      <a id="DailyBonus:DailyBonus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DailyBonus$.html"><span class="name">DailyBonus</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="DailyBonus.html" class="extype" name="pogoprotos.data.player.DailyBonus">DailyBonus</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@DailyBonus" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.DailyBonusProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DailyBonusProto"></a>
+      <a id="DailyBonusProto:DailyBonusProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DailyBonusProto$.html"><span class="name">DailyBonusProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@DailyBonusProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.EquippedBadge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EquippedBadge"></a>
+      <a id="EquippedBadge:EquippedBadge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EquippedBadge$.html"><span class="name">EquippedBadge</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="EquippedBadge.html" class="extype" name="pogoprotos.data.player.EquippedBadge">EquippedBadge</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@EquippedBadge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.EquippedBadgeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EquippedBadgeProto"></a>
+      <a id="EquippedBadgeProto:EquippedBadgeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EquippedBadgeProto$.html"><span class="name">EquippedBadgeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@EquippedBadgeProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerAvatar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerAvatar"></a>
+      <a id="PlayerAvatar:PlayerAvatar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerAvatar$.html"><span class="name">PlayerAvatar</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="PlayerAvatar.html" class="extype" name="pogoprotos.data.player.PlayerAvatar">PlayerAvatar</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerAvatar" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerAvatarProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerAvatarProto"></a>
+      <a id="PlayerAvatarProto:PlayerAvatarProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerAvatarProto$.html"><span class="name">PlayerAvatarProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerAvatarProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerCamera"></a>
+      <a id="PlayerCamera:PlayerCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerCamera$.html"><span class="name">PlayerCamera</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerCamera" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerCameraProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerCameraProto"></a>
+      <a id="PlayerCameraProto:PlayerCameraProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerCameraProto$.html"><span class="name">PlayerCameraProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerCameraProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerCurrency"></a>
+      <a id="PlayerCurrency:PlayerCurrency"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerCurrency$.html"><span class="name">PlayerCurrency</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerCurrency" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerCurrencyProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerCurrencyProto"></a>
+      <a id="PlayerCurrencyProto:PlayerCurrencyProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerCurrencyProto$.html"><span class="name">PlayerCurrencyProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerCurrencyProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerPublicProfile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerPublicProfile"></a>
+      <a id="PlayerPublicProfile:PlayerPublicProfile"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerPublicProfile$.html"><span class="name">PlayerPublicProfile</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="PlayerPublicProfile.html" class="extype" name="pogoprotos.data.player.PlayerPublicProfile">PlayerPublicProfile</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerPublicProfile" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerPublicProfileProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerPublicProfileProto"></a>
+      <a id="PlayerPublicProfileProto:PlayerPublicProfileProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerPublicProfileProto$.html"><span class="name">PlayerPublicProfileProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerPublicProfileProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerStats"></a>
+      <a id="PlayerStats:PlayerStats"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerStats$.html"><span class="name">PlayerStats</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerStats" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.player.PlayerStatsProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlayerStatsProto"></a>
+      <a id="PlayerStatsProto:PlayerStatsProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PlayerStatsProto$.html"><span class="name">PlayerStatsProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.player.package@PlayerStatsProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

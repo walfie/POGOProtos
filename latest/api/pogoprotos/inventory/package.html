@@ -1,0 +1,763 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>inventory - pogoprotos.inventory</title>
+          <meta name="description" content="inventory - pogoprotos.inventory" />
+          <meta name="keywords" content="inventory pogoprotos.inventory" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'pogoprotos.inventory.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="pogoprotos">pogoprotos</a></p>
+        <h1>inventory</h1><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inventory</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="pogoprotos.inventory.AppliedItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AppliedItemextendsGeneratedMessagewithMessage[pogoprotos.inventory.AppliedItem]withUpdatable[pogoprotos.inventory.AppliedItem]withProductwithSerializable"></a>
+      <a id="AppliedItem:AppliedItem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AppliedItem.html"><span class="name">AppliedItem</span></a><span class="params">(<span name="itemId">itemId: <a href="item/ItemId.html" class="extype" name="pogoprotos.inventory.item.ItemId">ItemId</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.inventory.item.ItemId.ITEM_UNKNOWN</a></span>'>...</span></span>, <span name="itemType">itemType: <a href="item/ItemType.html" class="extype" name="pogoprotos.inventory.item.ItemType">ItemType</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.inventory.item.ItemType.ITEM_TYPE_NONE</a></span>'>...</span></span>, <span name="expireMs">expireMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="appliedMs">appliedMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="AppliedItem.html" class="extype" name="pogoprotos.inventory.AppliedItem">AppliedItem</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="AppliedItem.html" class="extype" name="pogoprotos.inventory.AppliedItem">AppliedItem</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@AppliedItemextendsGeneratedMessagewithMessage[pogoprotos.inventory.AppliedItem]withUpdatable[pogoprotos.inventory.AppliedItem]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.AppliedItems" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AppliedItemsextendsGeneratedMessagewithMessage[pogoprotos.inventory.AppliedItems]withUpdatable[pogoprotos.inventory.AppliedItems]withProductwithSerializable"></a>
+      <a id="AppliedItems:AppliedItems"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AppliedItems.html"><span class="name">AppliedItems</span></a><span class="params">(<span name="item">item: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="AppliedItem.html" class="extype" name="pogoprotos.inventory.AppliedItem">AppliedItem</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@AppliedItemsextendsGeneratedMessagewithMessage[pogoprotos.inventory.AppliedItems]withUpdatable[pogoprotos.inventory.AppliedItems]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.EggIncubator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EggIncubatorextendsGeneratedMessagewithMessage[pogoprotos.inventory.EggIncubator]withUpdatable[pogoprotos.inventory.EggIncubator]withProductwithSerializable"></a>
+      <a id="EggIncubator:EggIncubator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubator.html"><span class="name">EggIncubator</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="itemId">itemId: <a href="item/ItemId.html" class="extype" name="pogoprotos.inventory.item.ItemId">ItemId</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.inventory.item.ItemId.ITEM_UNKNOWN</a></span>'>...</span></span>, <span name="incubatorType">incubatorType: <a href="EggIncubatorType.html" class="extype" name="pogoprotos.inventory.EggIncubatorType">EggIncubatorType</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.inventory.EggIncubatorType.INCUBATOR_UNSET</a></span>'>...</span></span>, <span name="usesRemaining">usesRemaining: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="pokemonId">pokemonId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="startKmWalked">startKmWalked: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="targetKmWalked">targetKmWalked: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="EggIncubator.html" class="extype" name="pogoprotos.inventory.EggIncubator">EggIncubator</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="EggIncubator.html" class="extype" name="pogoprotos.inventory.EggIncubator">EggIncubator</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorextendsGeneratedMessagewithMessage[pogoprotos.inventory.EggIncubator]withUpdatable[pogoprotos.inventory.EggIncubator]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.EggIncubatorType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EggIncubatorTypeextendsGeneratedEnum"></a>
+      <a id="EggIncubatorType:EggIncubatorType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubatorType.html"><span class="name">EggIncubatorType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorTypeextendsGeneratedEnum" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubators" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EggIncubatorsextendsGeneratedMessagewithMessage[pogoprotos.inventory.EggIncubators]withUpdatable[pogoprotos.inventory.EggIncubators]withProductwithSerializable"></a>
+      <a id="EggIncubators:EggIncubators"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubators.html"><span class="name">EggIncubators</span></a><span class="params">(<span name="eggIncubator">eggIncubator: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="EggIncubator.html" class="extype" name="pogoprotos.inventory.EggIncubator">EggIncubator</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorsextendsGeneratedMessagewithMessage[pogoprotos.inventory.EggIncubators]withUpdatable[pogoprotos.inventory.EggIncubators]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryDelta" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InventoryDeltaextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryDelta]withUpdatable[pogoprotos.inventory.InventoryDelta]withProductwithSerializable"></a>
+      <a id="InventoryDelta:InventoryDelta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryDelta.html"><span class="name">InventoryDelta</span></a><span class="params">(<span name="originalTimestampMs">originalTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="newTimestampMs">newTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="inventoryItems">inventoryItems: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="InventoryItem.html" class="extype" name="pogoprotos.inventory.InventoryItem">InventoryItem</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="InventoryDelta.html" class="extype" name="pogoprotos.inventory.InventoryDelta">InventoryDelta</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="InventoryDelta.html" class="extype" name="pogoprotos.inventory.InventoryDelta">InventoryDelta</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryDeltaextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryDelta]withUpdatable[pogoprotos.inventory.InventoryDelta]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InventoryItemextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryItem]withUpdatable[pogoprotos.inventory.InventoryItem]withProductwithSerializable"></a>
+      <a id="InventoryItem:InventoryItem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryItem.html"><span class="name">InventoryItem</span></a><span class="params">(<span name="modifiedTimestampMs">modifiedTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="deletedItemKey">deletedItemKey: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="inventoryItemData">inventoryItemData: <span class="extype" name="scala.Option">Option</span>[<a href="InventoryItemData.html" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="InventoryItem.html" class="extype" name="pogoprotos.inventory.InventoryItem">InventoryItem</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="InventoryItem.html" class="extype" name="pogoprotos.inventory.InventoryItem">InventoryItem</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryItemextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryItem]withUpdatable[pogoprotos.inventory.InventoryItem]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InventoryItemDataextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryItemData]withUpdatable[pogoprotos.inventory.InventoryItemData]withProductwithSerializable"></a>
+      <a id="InventoryItemData:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryItemData.html"><span class="name">InventoryItemData</span></a><span class="params">(<span name="pokemonData">pokemonData: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a>] = <span class="symbol">None</span></span>, <span name="item">item: <span class="extype" name="scala.Option">Option</span>[<a href="item/ItemData.html" class="extype" name="pogoprotos.inventory.item.ItemData">ItemData</a>] = <span class="symbol">None</span></span>, <span name="pokedexEntry">pokedexEntry: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokedexEntry.html" class="extype" name="pogoprotos.data.PokedexEntry">PokedexEntry</a>] = <span class="symbol">None</span></span>, <span name="playerStats">playerStats: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>] = <span class="symbol">None</span></span>, <span name="playerCurrency">playerCurrency: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>] = <span class="symbol">None</span></span>, <span name="playerCamera">playerCamera: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>] = <span class="symbol">None</span></span>, <span name="inventoryUpgrades">inventoryUpgrades: <span class="extype" name="scala.Option">Option</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>] = <span class="symbol">None</span></span>, <span name="appliedItems">appliedItems: <span class="extype" name="scala.Option">Option</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>] = <span class="symbol">None</span></span>, <span name="eggIncubators">eggIncubators: <span class="extype" name="scala.Option">Option</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>] = <span class="symbol">None</span></span>, <span name="pokemonFamily">pokemonFamily: <span class="extype" name="scala.Option">Option</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="InventoryItemData.html" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="InventoryItemData.html" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryItemDataextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryItemData]withUpdatable[pogoprotos.inventory.InventoryItemData]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryUpgrade" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InventoryUpgradeextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryUpgrade]withUpdatable[pogoprotos.inventory.InventoryUpgrade]withProductwithSerializable"></a>
+      <a id="InventoryUpgrade:InventoryUpgrade"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgrade.html"><span class="name">InventoryUpgrade</span></a><span class="params">(<span name="itemId">itemId: <a href="item/ItemId.html" class="extype" name="pogoprotos.inventory.item.ItemId">ItemId</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.inventory.item.ItemId.ITEM_UNKNOWN</a></span>'>...</span></span>, <span name="upgradeType">upgradeType: <a href="InventoryUpgradeType.html" class="extype" name="pogoprotos.inventory.InventoryUpgradeType">InventoryUpgradeType</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.inventory.InventoryUpgradeType.UPGRADE_UNSET</a></span>'>...</span></span>, <span name="additionalStorage">additionalStorage: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="InventoryUpgrade.html" class="extype" name="pogoprotos.inventory.InventoryUpgrade">InventoryUpgrade</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="InventoryUpgrade.html" class="extype" name="pogoprotos.inventory.InventoryUpgrade">InventoryUpgrade</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradeextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryUpgrade]withUpdatable[pogoprotos.inventory.InventoryUpgrade]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryUpgradeType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgradeTypeextendsGeneratedEnum"></a>
+      <a id="InventoryUpgradeType:InventoryUpgradeType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgradeType.html"><span class="name">InventoryUpgradeType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradeTypeextendsGeneratedEnum" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgrades" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InventoryUpgradesextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryUpgrades]withUpdatable[pogoprotos.inventory.InventoryUpgrades]withProductwithSerializable"></a>
+      <a id="InventoryUpgrades:InventoryUpgrades"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgrades.html"><span class="name">InventoryUpgrades</span></a><span class="params">(<span name="inventoryUpgrades">inventoryUpgrades: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="InventoryUpgrade.html" class="extype" name="pogoprotos.inventory.InventoryUpgrade">InventoryUpgrade</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradesextendsGeneratedMessagewithMessage[pogoprotos.inventory.InventoryUpgrades]withUpdatable[pogoprotos.inventory.InventoryUpgrades]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.PokemonFamily" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PokemonFamilyextendsGeneratedMessagewithMessage[pogoprotos.inventory.PokemonFamily]withUpdatable[pogoprotos.inventory.PokemonFamily]withProductwithSerializable"></a>
+      <a id="PokemonFamily:PokemonFamily"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PokemonFamily.html"><span class="name">PokemonFamily</span></a><span class="params">(<span name="familyId">familyId: <a href="../enums/PokemonFamilyId.html" class="extype" name="pogoprotos.enums.PokemonFamilyId">PokemonFamilyId</a> = <span class="defval" name='<span class="name"><a href="../package.html">pogoprotos.enums.PokemonFamilyId.FAMILY_UNSET</a></span>'>...</span></span>, <span name="candy">candy: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@PokemonFamilyextendsGeneratedMessagewithMessage[pogoprotos.inventory.PokemonFamily]withUpdatable[pogoprotos.inventory.PokemonFamily]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="pogoprotos.inventory.AppliedItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AppliedItem"></a>
+      <a id="AppliedItem:AppliedItem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AppliedItem$.html"><span class="name">AppliedItem</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="AppliedItem.html" class="extype" name="pogoprotos.inventory.AppliedItem">AppliedItem</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@AppliedItem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.AppliedItemProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AppliedItemProto"></a>
+      <a id="AppliedItemProto:AppliedItemProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AppliedItemProto$.html"><span class="name">AppliedItemProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@AppliedItemProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.AppliedItems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AppliedItems"></a>
+      <a id="AppliedItems:AppliedItems"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AppliedItems$.html"><span class="name">AppliedItems</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@AppliedItems" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.AppliedItemsProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AppliedItemsProto"></a>
+      <a id="AppliedItemsProto:AppliedItemsProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AppliedItemsProto$.html"><span class="name">AppliedItemsProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@AppliedItemsProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EggIncubator"></a>
+      <a id="EggIncubator:EggIncubator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubator$.html"><span class="name">EggIncubator</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="EggIncubator.html" class="extype" name="pogoprotos.inventory.EggIncubator">EggIncubator</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubator" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubatorProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EggIncubatorProto"></a>
+      <a id="EggIncubatorProto:EggIncubatorProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubatorProto$.html"><span class="name">EggIncubatorProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubatorType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EggIncubatorType"></a>
+      <a id="EggIncubatorType:EggIncubatorType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubatorType$.html"><span class="name">EggIncubatorType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="EggIncubatorType.html" class="extype" name="pogoprotos.inventory.EggIncubatorType">EggIncubatorType</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorType" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubatorTypeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EggIncubatorTypeProto"></a>
+      <a id="EggIncubatorTypeProto:EggIncubatorTypeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubatorTypeProto$.html"><span class="name">EggIncubatorTypeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorTypeProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubators" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EggIncubators"></a>
+      <a id="EggIncubators:EggIncubators"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubators$.html"><span class="name">EggIncubators</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubators" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.EggIncubatorsProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EggIncubatorsProto"></a>
+      <a id="EggIncubatorsProto:EggIncubatorsProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EggIncubatorsProto$.html"><span class="name">EggIncubatorsProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@EggIncubatorsProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryDelta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryDelta"></a>
+      <a id="InventoryDelta:InventoryDelta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryDelta$.html"><span class="name">InventoryDelta</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="InventoryDelta.html" class="extype" name="pogoprotos.inventory.InventoryDelta">InventoryDelta</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryDelta" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryDeltaProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryDeltaProto"></a>
+      <a id="InventoryDeltaProto:InventoryDeltaProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryDeltaProto$.html"><span class="name">InventoryDeltaProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryDeltaProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryItem"></a>
+      <a id="InventoryItem:InventoryItem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryItem$.html"><span class="name">InventoryItem</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="InventoryItem.html" class="extype" name="pogoprotos.inventory.InventoryItem">InventoryItem</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryItem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryItemData"></a>
+      <a id="InventoryItemData:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryItemData$.html"><span class="name">InventoryItemData</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="InventoryItemData.html" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemDataProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryItemDataProto"></a>
+      <a id="InventoryItemDataProto:InventoryItemDataProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryItemDataProto$.html"><span class="name">InventoryItemDataProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryItemDataProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryItemProto"></a>
+      <a id="InventoryItemProto:InventoryItemProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryItemProto$.html"><span class="name">InventoryItemProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryItemProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgrade" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgrade"></a>
+      <a id="InventoryUpgrade:InventoryUpgrade"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgrade$.html"><span class="name">InventoryUpgrade</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="InventoryUpgrade.html" class="extype" name="pogoprotos.inventory.InventoryUpgrade">InventoryUpgrade</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgrade" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgradeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgradeProto"></a>
+      <a id="InventoryUpgradeProto:InventoryUpgradeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgradeProto$.html"><span class="name">InventoryUpgradeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradeProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgradeType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgradeType"></a>
+      <a id="InventoryUpgradeType:InventoryUpgradeType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgradeType$.html"><span class="name">InventoryUpgradeType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="InventoryUpgradeType.html" class="extype" name="pogoprotos.inventory.InventoryUpgradeType">InventoryUpgradeType</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradeType" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgradeTypeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgradeTypeProto"></a>
+      <a id="InventoryUpgradeTypeProto:InventoryUpgradeTypeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgradeTypeProto$.html"><span class="name">InventoryUpgradeTypeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradeTypeProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgrades" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgrades"></a>
+      <a id="InventoryUpgrades:InventoryUpgrades"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgrades$.html"><span class="name">InventoryUpgrades</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgrades" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryUpgradesProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InventoryUpgradesProto"></a>
+      <a id="InventoryUpgradesProto:InventoryUpgradesProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InventoryUpgradesProto$.html"><span class="name">InventoryUpgradesProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@InventoryUpgradesProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.PokemonFamily" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PokemonFamily"></a>
+      <a id="PokemonFamily:PokemonFamily"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PokemonFamily$.html"><span class="name">PokemonFamily</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@PokemonFamily" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.PokemonFamilyProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PokemonFamilyProto"></a>
+      <a id="PokemonFamilyProto:PokemonFamilyProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PokemonFamilyProto$.html"><span class="name">PokemonFamilyProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@PokemonFamilyProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.item" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="item"></a>
+      <a id="item:item"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="item/package.html"><span class="name">item</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.package@item" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

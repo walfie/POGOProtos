@@ -1,0 +1,297 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>map - pogoprotos.map</title>
+          <meta name="description" content="map - pogoprotos.map" />
+          <meta name="keywords" content="map pogoprotos.map" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'pogoprotos.map.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="pogoprotos">pogoprotos</a></p>
+        <h1>map</h1><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="pogoprotos.map.MapCell" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MapCellextendsGeneratedMessagewithMessage[pogoprotos.map.MapCell]withUpdatable[pogoprotos.map.MapCell]withProductwithSerializable"></a>
+      <a id="MapCell:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MapCell.html"><span class="name">MapCell</span></a><span class="params">(<span name="s2CellId">s2CellId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="currentTimestampMs">currentTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="forts">forts: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortData.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>] = <span class="symbol">Nil</span></span>, <span name="spawnPoints">spawnPoints: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] = <span class="symbol">Nil</span></span>, <span name="deletedObjects">deletedObjects: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Nil</span></span>, <span name="isTruncatedList">isTruncatedList: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="fortSummaries">fortSummaries: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="fort/FortSummary.html" class="extype" name="pogoprotos.map.fort.FortSummary">FortSummary</a>] = <span class="symbol">Nil</span></span>, <span name="decimatedSpawnPoints">decimatedSpawnPoints: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] = <span class="symbol">Nil</span></span>, <span name="wildPokemons">wildPokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/WildPokemon.html" class="extype" name="pogoprotos.map.pokemon.WildPokemon">WildPokemon</a>] = <span class="symbol">Nil</span></span>, <span name="catchablePokemons">catchablePokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/MapPokemon.html" class="extype" name="pogoprotos.map.pokemon.MapPokemon">MapPokemon</a>] = <span class="symbol">Nil</span></span>, <span name="nearbyPokemons">nearbyPokemons: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="pokemon/NearbyPokemon.html" class="extype" name="pogoprotos.map.pokemon.NearbyPokemon">NearbyPokemon</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="MapCell.html" class="extype" name="pogoprotos.map.MapCell">MapCell</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="MapCell.html" class="extype" name="pogoprotos.map.MapCell">MapCell</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@MapCellextendsGeneratedMessagewithMessage[pogoprotos.map.MapCell]withUpdatable[pogoprotos.map.MapCell]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.map.MapObjectsStatus" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MapObjectsStatusextendsGeneratedEnum"></a>
+      <a id="MapObjectsStatus:MapObjectsStatus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MapObjectsStatus.html"><span class="name">MapObjectsStatus</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@MapObjectsStatusextendsGeneratedEnum" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.SpawnPoint" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SpawnPointextendsGeneratedMessagewithMessage[pogoprotos.map.SpawnPoint]withUpdatable[pogoprotos.map.SpawnPoint]withProductwithSerializable"></a>
+      <a id="SpawnPoint:SpawnPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SpawnPoint.html"><span class="name">SpawnPoint</span></a><span class="params">(<span name="latitude">latitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="longitude">longitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@SpawnPointextendsGeneratedMessagewithMessage[pogoprotos.map.SpawnPoint]withUpdatable[pogoprotos.map.SpawnPoint]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="pogoprotos.map.MapCell" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapCell"></a>
+      <a id="MapCell:MapCell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MapCell$.html"><span class="name">MapCell</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="MapCell.html" class="extype" name="pogoprotos.map.MapCell">MapCell</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@MapCell" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapCellProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapCellProto"></a>
+      <a id="MapCellProto:MapCellProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MapCellProto$.html"><span class="name">MapCellProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@MapCellProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapObjectsStatus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapObjectsStatus"></a>
+      <a id="MapObjectsStatus:MapObjectsStatus"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MapObjectsStatus$.html"><span class="name">MapObjectsStatus</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="MapObjectsStatus.html" class="extype" name="pogoprotos.map.MapObjectsStatus">MapObjectsStatus</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@MapObjectsStatus" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.MapObjectsStatusProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapObjectsStatusProto"></a>
+      <a id="MapObjectsStatusProto:MapObjectsStatusProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MapObjectsStatusProto$.html"><span class="name">MapObjectsStatusProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@MapObjectsStatusProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.SpawnPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpawnPoint"></a>
+      <a id="SpawnPoint:SpawnPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SpawnPoint$.html"><span class="name">SpawnPoint</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="SpawnPoint.html" class="extype" name="pogoprotos.map.SpawnPoint">SpawnPoint</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@SpawnPoint" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.SpawnPointProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpawnPointProto"></a>
+      <a id="SpawnPointProto:SpawnPointProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SpawnPointProto$.html"><span class="name">SpawnPointProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@SpawnPointProto" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fort"></a>
+      <a id="fort:fort"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="fort/package.html"><span class="name">fort</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@fort" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.pokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pokemon"></a>
+      <a id="pokemon:pokemon"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="pokemon/package.html"><span class="name">pokemon</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.map.package@pokemon" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

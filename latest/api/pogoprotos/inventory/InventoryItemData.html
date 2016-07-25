@@ -1,0 +1,1337 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>InventoryItemData - pogoprotos.inventory.InventoryItemData</title>
+          <meta name="description" content="InventoryItemData - pogoprotos.inventory.InventoryItemData" />
+          <meta name="keywords" content="InventoryItemData pogoprotos.inventory.InventoryItemData" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'pogoprotos.inventory.InventoryItemData';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="InventoryItemData$.html" title="See companion object"><img alt="Class/Object" src="../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="package.html" class="extype" name="pogoprotos.inventory">inventory</a></p>
+        <h1><a href="InventoryItemData$.html" title="See companion object">InventoryItemData</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="InventoryItemData$.html" title="See companion object">object InventoryItemData</a>
+            | <a href="package.html" class="extype" name="pogoprotos.inventory">package inventory</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InventoryItemData</span><span class="params">(<span name="pokemonData">pokemonData: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a>] = <span class="symbol">None</span></span>, <span name="item">item: <span class="extype" name="scala.Option">Option</span>[<a href="item/ItemData.html" class="extype" name="pogoprotos.inventory.item.ItemData">ItemData</a>] = <span class="symbol">None</span></span>, <span name="pokedexEntry">pokedexEntry: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokedexEntry.html" class="extype" name="pogoprotos.data.PokedexEntry">PokedexEntry</a>] = <span class="symbol">None</span></span>, <span name="playerStats">playerStats: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>] = <span class="symbol">None</span></span>, <span name="playerCurrency">playerCurrency: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>] = <span class="symbol">None</span></span>, <span name="playerCamera">playerCamera: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>] = <span class="symbol">None</span></span>, <span name="inventoryUpgrades">inventoryUpgrades: <span class="extype" name="scala.Option">Option</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>] = <span class="symbol">None</span></span>, <span name="appliedItems">appliedItems: <span class="extype" name="scala.Option">Option</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>] = <span class="symbol">None</span></span>, <span name="eggIncubators">eggIncubators: <span class="extype" name="scala.Option">Option</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>] = <span class="symbol">None</span></span>, <span name="pokemonFamily">pokemonFamily: <span class="extype" name="scala.Option">Option</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>], <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>], <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="pogoprotos.inventory.InventoryItemData"><span>InventoryItemData</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.trueaccord.lenses.Updatable"><span>Updatable</span></li><li class="in" name="com.trueaccord.scalapb.Message"><span>Message</span></li><li class="in" name="com.trueaccord.scalapb.GeneratedMessage"><span>GeneratedMessage</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="pogoprotos.inventory.InventoryItemData#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(pokemonData:Option[pogoprotos.data.PokemonData],item:Option[pogoprotos.inventory.item.ItemData],pokedexEntry:Option[pogoprotos.data.PokedexEntry],playerStats:Option[pogoprotos.data.player.PlayerStats],playerCurrency:Option[pogoprotos.data.player.PlayerCurrency],playerCamera:Option[pogoprotos.data.player.PlayerCamera],inventoryUpgrades:Option[pogoprotos.inventory.InventoryUpgrades],appliedItems:Option[pogoprotos.inventory.AppliedItems],eggIncubators:Option[pogoprotos.inventory.EggIncubators],pokemonFamily:Option[pogoprotos.inventory.PokemonFamily]):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="&lt;init&gt;:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InventoryItemData</span><span class="params">(<span name="pokemonData">pokemonData: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a>] = <span class="symbol">None</span></span>, <span name="item">item: <span class="extype" name="scala.Option">Option</span>[<a href="item/ItemData.html" class="extype" name="pogoprotos.inventory.item.ItemData">ItemData</a>] = <span class="symbol">None</span></span>, <span name="pokedexEntry">pokedexEntry: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokedexEntry.html" class="extype" name="pogoprotos.data.PokedexEntry">PokedexEntry</a>] = <span class="symbol">None</span></span>, <span name="playerStats">playerStats: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>] = <span class="symbol">None</span></span>, <span name="playerCurrency">playerCurrency: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>] = <span class="symbol">None</span></span>, <span name="playerCamera">playerCamera: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>] = <span class="symbol">None</span></span>, <span name="inventoryUpgrades">inventoryUpgrades: <span class="extype" name="scala.Option">Option</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>] = <span class="symbol">None</span></span>, <span name="appliedItems">appliedItems: <span class="extype" name="scala.Option">Option</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>] = <span class="symbol">None</span></span>, <span name="eggIncubators">eggIncubators: <span class="extype" name="scala.Option">Option</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>] = <span class="symbol">None</span></span>, <span name="pokemonFamily">pokemonFamily: <span class="extype" name="scala.Option">Option</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>] = <span class="symbol">None</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@&lt;init&gt;(pokemonData:Option[pogoprotos.data.PokemonData],item:Option[pogoprotos.inventory.item.ItemData],pokedexEntry:Option[pogoprotos.data.PokedexEntry],playerStats:Option[pogoprotos.data.player.PlayerStats],playerCurrency:Option[pogoprotos.data.player.PlayerCurrency],playerCamera:Option[pogoprotos.data.player.PlayerCamera],inventoryUpgrades:Option[pogoprotos.inventory.InventoryUpgrades],appliedItems:Option[pogoprotos.inventory.AppliedItems],eggIncubators:Option[pogoprotos.inventory.EggIncubators],pokemonFamily:Option[pogoprotos.inventory.PokemonFamily]):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#appliedItems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="appliedItems:Option[pogoprotos.inventory.AppliedItems]"></a>
+      <a id="appliedItems:Option[AppliedItems]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appliedItems</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@appliedItems:Option[pogoprotos.inventory.AppliedItems]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearAppliedItems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearAppliedItems:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearAppliedItems:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearAppliedItems</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearAppliedItems:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearEggIncubators" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearEggIncubators:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearEggIncubators:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearEggIncubators</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearEggIncubators:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearInventoryUpgrades" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearInventoryUpgrades:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearInventoryUpgrades:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearInventoryUpgrades</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearInventoryUpgrades:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearItem:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearItem:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearItem</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearItem:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearPlayerCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPlayerCamera:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearPlayerCamera:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPlayerCamera</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearPlayerCamera:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearPlayerCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPlayerCurrency:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearPlayerCurrency:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPlayerCurrency</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearPlayerCurrency:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearPlayerStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPlayerStats:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearPlayerStats:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPlayerStats</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearPlayerStats:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearPokedexEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPokedexEntry:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearPokedexEntry:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPokedexEntry</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearPokedexEntry:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearPokemonData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPokemonData:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearPokemonData:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPokemonData</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearPokemonData:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#clearPokemonFamily" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearPokemonFamily:pogoprotos.inventory.InventoryItemData"></a>
+      <a id="clearPokemonFamily:InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearPokemonFamily</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clearPokemonFamily:pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#companion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="companion:pogoprotos.inventory.InventoryItemData.type"></a>
+      <a id="companion:InventoryItemData.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">companion</span><span class="result">: <a href="InventoryItemData$.html" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@companion:pogoprotos.inventory.InventoryItemData.type" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#eggIncubators" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="eggIncubators:Option[pogoprotos.inventory.EggIncubators]"></a>
+      <a id="eggIncubators:Option[EggIncubators]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eggIncubators</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@eggIncubators:Option[pogoprotos.inventory.EggIncubators]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#getAllFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]"></a>
+      <a id="getAllFields:Map[FieldDescriptor,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAllFields</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#getAppliedItems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getAppliedItems:pogoprotos.inventory.AppliedItems"></a>
+      <a id="getAppliedItems:AppliedItems"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAppliedItems</span><span class="result">: <a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getAppliedItems:pogoprotos.inventory.AppliedItems" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#getEggIncubators" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getEggIncubators:pogoprotos.inventory.EggIncubators"></a>
+      <a id="getEggIncubators:EggIncubators"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEggIncubators</span><span class="result">: <a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getEggIncubators:pogoprotos.inventory.EggIncubators" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any"></a>
+      <a id="getField(FieldDescriptor):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getField</span><span class="params">(<span name="__field">__field: <span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#getInventoryUpgrades" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getInventoryUpgrades:pogoprotos.inventory.InventoryUpgrades"></a>
+      <a id="getInventoryUpgrades:InventoryUpgrades"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInventoryUpgrades</span><span class="result">: <a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getInventoryUpgrades:pogoprotos.inventory.InventoryUpgrades" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getItem:pogoprotos.inventory.item.ItemData"></a>
+      <a id="getItem:ItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getItem</span><span class="result">: <a href="item/ItemData.html" class="extype" name="pogoprotos.inventory.item.ItemData">ItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getItem:pogoprotos.inventory.item.ItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getPlayerCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPlayerCamera:pogoprotos.data.player.PlayerCamera"></a>
+      <a id="getPlayerCamera:PlayerCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPlayerCamera</span><span class="result">: <a href="../data/player/PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getPlayerCamera:pogoprotos.data.player.PlayerCamera" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getPlayerCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPlayerCurrency:pogoprotos.data.player.PlayerCurrency"></a>
+      <a id="getPlayerCurrency:PlayerCurrency"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPlayerCurrency</span><span class="result">: <a href="../data/player/PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getPlayerCurrency:pogoprotos.data.player.PlayerCurrency" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getPlayerStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPlayerStats:pogoprotos.data.player.PlayerStats"></a>
+      <a id="getPlayerStats:PlayerStats"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPlayerStats</span><span class="result">: <a href="../data/player/PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getPlayerStats:pogoprotos.data.player.PlayerStats" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getPokedexEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPokedexEntry:pogoprotos.data.PokedexEntry"></a>
+      <a id="getPokedexEntry:PokedexEntry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPokedexEntry</span><span class="result">: <a href="../data/PokedexEntry.html" class="extype" name="pogoprotos.data.PokedexEntry">PokedexEntry</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getPokedexEntry:pogoprotos.data.PokedexEntry" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getPokemonData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPokemonData:pogoprotos.data.PokemonData"></a>
+      <a id="getPokemonData:PokemonData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPokemonData</span><span class="result">: <a href="../data/PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getPokemonData:pogoprotos.data.PokemonData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#getPokemonFamily" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPokemonFamily:pogoprotos.inventory.PokemonFamily"></a>
+      <a id="getPokemonFamily:PokemonFamily"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPokemonFamily</span><span class="result">: <a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@getPokemonFamily:pogoprotos.inventory.PokemonFamily" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#inventoryUpgrades" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="inventoryUpgrades:Option[pogoprotos.inventory.InventoryUpgrades]"></a>
+      <a id="inventoryUpgrades:Option[InventoryUpgrades]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inventoryUpgrades</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@inventoryUpgrades:Option[pogoprotos.inventory.InventoryUpgrades]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#item" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="item:Option[pogoprotos.inventory.item.ItemData]"></a>
+      <a id="item:Option[ItemData]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">item</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="item/ItemData.html" class="extype" name="pogoprotos.inventory.item.ItemData">ItemData</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@item:Option[pogoprotos.inventory.item.ItemData]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#mergeFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="mergeFrom(CodedInputStream):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeFrom</span><span class="params">(<span name="_input__">_input__: <span class="extype" name="com.google.protobuf.CodedInputStream">CodedInputStream</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a> → Message</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#playerCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="playerCamera:Option[pogoprotos.data.player.PlayerCamera]"></a>
+      <a id="playerCamera:Option[PlayerCamera]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">playerCamera</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@playerCamera:Option[pogoprotos.data.player.PlayerCamera]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#playerCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="playerCurrency:Option[pogoprotos.data.player.PlayerCurrency]"></a>
+      <a id="playerCurrency:Option[PlayerCurrency]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">playerCurrency</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@playerCurrency:Option[pogoprotos.data.player.PlayerCurrency]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#playerStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="playerStats:Option[pogoprotos.data.player.PlayerStats]"></a>
+      <a id="playerStats:Option[PlayerStats]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">playerStats</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../data/player/PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@playerStats:Option[pogoprotos.data.player.PlayerStats]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#pokedexEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pokedexEntry:Option[pogoprotos.data.PokedexEntry]"></a>
+      <a id="pokedexEntry:Option[PokedexEntry]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pokedexEntry</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokedexEntry.html" class="extype" name="pogoprotos.data.PokedexEntry">PokedexEntry</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@pokedexEntry:Option[pogoprotos.data.PokedexEntry]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#pokemonData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pokemonData:Option[pogoprotos.data.PokemonData]"></a>
+      <a id="pokemonData:Option[PokemonData]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pokemonData</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../data/PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@pokemonData:Option[pogoprotos.data.PokemonData]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#pokemonFamily" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pokemonFamily:Option[pogoprotos.inventory.PokemonFamily]"></a>
+      <a id="pokemonFamily:Option[PokemonFamily]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pokemonFamily</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@pokemonFamily:Option[pogoprotos.inventory.PokemonFamily]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#serializedSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serializedSize:Int"></a>
+      <a id="serializedSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serializedSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@serializedSize:Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#toByteArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByteArray:Array[Byte]"></a>
+      <a id="toByteArray:Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@toByteArray:Array[Byte]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="com.trueaccord.lenses.Updatable#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A"></a>
+      <a id="update((Lens[InventoryItemData,InventoryItemData])⇒Mutation[InventoryItemData]*):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="ms">ms: (<span class="extype" name="com.trueaccord.lenses.Lens">Lens</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>, <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>]) ⇒ <span class="extype" name="com.trueaccord.lenses.Mutation">Mutation</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>]*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Updatable</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#withAppliedItems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withAppliedItems(__v:pogoprotos.inventory.AppliedItems):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withAppliedItems(AppliedItems):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAppliedItems</span><span class="params">(<span name="__v">__v: <a href="AppliedItems.html" class="extype" name="pogoprotos.inventory.AppliedItems">AppliedItems</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withAppliedItems(__v:pogoprotos.inventory.AppliedItems):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withEggIncubators" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withEggIncubators(__v:pogoprotos.inventory.EggIncubators):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withEggIncubators(EggIncubators):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withEggIncubators</span><span class="params">(<span name="__v">__v: <a href="EggIncubators.html" class="extype" name="pogoprotos.inventory.EggIncubators">EggIncubators</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withEggIncubators(__v:pogoprotos.inventory.EggIncubators):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withInventoryUpgrades" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withInventoryUpgrades(__v:pogoprotos.inventory.InventoryUpgrades):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withInventoryUpgrades(InventoryUpgrades):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withInventoryUpgrades</span><span class="params">(<span name="__v">__v: <a href="InventoryUpgrades.html" class="extype" name="pogoprotos.inventory.InventoryUpgrades">InventoryUpgrades</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withInventoryUpgrades(__v:pogoprotos.inventory.InventoryUpgrades):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withItem(__v:pogoprotos.inventory.item.ItemData):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withItem(ItemData):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withItem</span><span class="params">(<span name="__v">__v: <a href="item/ItemData.html" class="extype" name="pogoprotos.inventory.item.ItemData">ItemData</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withItem(__v:pogoprotos.inventory.item.ItemData):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withPlayerCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPlayerCamera(__v:pogoprotos.data.player.PlayerCamera):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withPlayerCamera(PlayerCamera):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPlayerCamera</span><span class="params">(<span name="__v">__v: <a href="../data/player/PlayerCamera.html" class="extype" name="pogoprotos.data.player.PlayerCamera">PlayerCamera</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withPlayerCamera(__v:pogoprotos.data.player.PlayerCamera):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withPlayerCurrency" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPlayerCurrency(__v:pogoprotos.data.player.PlayerCurrency):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withPlayerCurrency(PlayerCurrency):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPlayerCurrency</span><span class="params">(<span name="__v">__v: <a href="../data/player/PlayerCurrency.html" class="extype" name="pogoprotos.data.player.PlayerCurrency">PlayerCurrency</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withPlayerCurrency(__v:pogoprotos.data.player.PlayerCurrency):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withPlayerStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPlayerStats(__v:pogoprotos.data.player.PlayerStats):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withPlayerStats(PlayerStats):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPlayerStats</span><span class="params">(<span name="__v">__v: <a href="../data/player/PlayerStats.html" class="extype" name="pogoprotos.data.player.PlayerStats">PlayerStats</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withPlayerStats(__v:pogoprotos.data.player.PlayerStats):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withPokedexEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPokedexEntry(__v:pogoprotos.data.PokedexEntry):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withPokedexEntry(PokedexEntry):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPokedexEntry</span><span class="params">(<span name="__v">__v: <a href="../data/PokedexEntry.html" class="extype" name="pogoprotos.data.PokedexEntry">PokedexEntry</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withPokedexEntry(__v:pogoprotos.data.PokedexEntry):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withPokemonData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPokemonData(__v:pogoprotos.data.PokemonData):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withPokemonData(PokemonData):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPokemonData</span><span class="params">(<span name="__v">__v: <a href="../data/PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withPokemonData(__v:pogoprotos.data.PokemonData):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.inventory.InventoryItemData#withPokemonFamily" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withPokemonFamily(__v:pogoprotos.inventory.PokemonFamily):pogoprotos.inventory.InventoryItemData"></a>
+      <a id="withPokemonFamily(PokemonFamily):InventoryItemData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPokemonFamily</span><span class="params">(<span name="__v">__v: <a href="PokemonFamily.html" class="extype" name="pogoprotos.inventory.PokemonFamily">PokemonFamily</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@withPokemonFamily(__v:pogoprotos.inventory.PokemonFamily):pogoprotos.inventory.InventoryItemData" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeDelimitedTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeDelimitedTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeDelimitedTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeDelimitedTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@writeDelimitedTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.inventory.InventoryItemData#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit"></a>
+      <a id="writeTo(CodedOutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="_output__">_output__: <span class="extype" name="com.google.protobuf.CodedOutputStream">CodedOutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#pogoprotos.inventory.InventoryItemData@writeTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.trueaccord.lenses.Updatable">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.Message">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.inventory.InventoryItemData">InventoryItemData</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.GeneratedMessage">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

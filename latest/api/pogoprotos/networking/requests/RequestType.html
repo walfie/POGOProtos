@@ -1,0 +1,1914 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>RequestType - pogoprotos.networking.requests.RequestType</title>
+          <meta name="description" content="RequestType - pogoprotos.networking.requests.RequestType" />
+          <meta name="keywords" content="RequestType pogoprotos.networking.requests.RequestType" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.networking.requests.RequestType';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="RequestType$.html" title="See companion object"><img alt="Trait/Object" src="../../../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.networking">networking</a>.<a href="package.html" class="extype" name="pogoprotos.networking.requests">requests</a></p>
+        <h1><a href="RequestType$.html" title="See companion object">RequestType</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="RequestType$.html" title="See companion object">object RequestType</a>
+            | <a href="package.html" class="extype" name="pogoprotos.networking.requests">package requests</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RequestType</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="RequestType$$ADD_FORT_MODIFIER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.ADD_FORT_MODIFIER">ADD_FORT_MODIFIER</a>, <a href="RequestType$$ATTACK_GYM$.html" class="extype" name="pogoprotos.networking.requests.RequestType.ATTACK_GYM">ATTACK_GYM</a>, <a href="RequestType$$BUY_GEM_PACK$.html" class="extype" name="pogoprotos.networking.requests.RequestType.BUY_GEM_PACK">BUY_GEM_PACK</a>, <a href="RequestType$$BUY_ITEM_PACK$.html" class="extype" name="pogoprotos.networking.requests.RequestType.BUY_ITEM_PACK">BUY_ITEM_PACK</a>, <a href="RequestType$$CATCH_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.CATCH_POKEMON">CATCH_POKEMON</a>, <a href="RequestType$$CHECK_AWARDED_BADGES$.html" class="extype" name="pogoprotos.networking.requests.RequestType.CHECK_AWARDED_BADGES">CHECK_AWARDED_BADGES</a>, <a href="RequestType$$CHECK_CODENAME_AVAILABLE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.CHECK_CODENAME_AVAILABLE">CHECK_CODENAME_AVAILABLE</a>, <a href="RequestType$$CLAIM_CODENAME$.html" class="extype" name="pogoprotos.networking.requests.RequestType.CLAIM_CODENAME">CLAIM_CODENAME</a>, <a href="RequestType$$COLLECT_DAILY_BONUS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.COLLECT_DAILY_BONUS">COLLECT_DAILY_BONUS</a>, <a href="RequestType$$COLLECT_DAILY_DEFENDER_BONUS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.COLLECT_DAILY_DEFENDER_BONUS">COLLECT_DAILY_DEFENDER_BONUS</a>, <a href="RequestType$$DEBUG_DELETE_PLAYER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.DEBUG_DELETE_PLAYER">DEBUG_DELETE_PLAYER</a>, <a href="RequestType$$DEBUG_UPDATE_INVENTORY$.html" class="extype" name="pogoprotos.networking.requests.RequestType.DEBUG_UPDATE_INVENTORY">DEBUG_UPDATE_INVENTORY</a>, <a href="RequestType$$DISK_ENCOUNTER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.DISK_ENCOUNTER">DISK_ENCOUNTER</a>, <a href="RequestType$$DOWNLOAD_ITEM_TEMPLATES$.html" class="extype" name="pogoprotos.networking.requests.RequestType.DOWNLOAD_ITEM_TEMPLATES">DOWNLOAD_ITEM_TEMPLATES</a>, <a href="RequestType$$DOWNLOAD_REMOTE_CONFIG_VERSION$.html" class="extype" name="pogoprotos.networking.requests.RequestType.DOWNLOAD_REMOTE_CONFIG_VERSION">DOWNLOAD_REMOTE_CONFIG_VERSION</a>, <a href="RequestType$$DOWNLOAD_SETTINGS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.DOWNLOAD_SETTINGS">DOWNLOAD_SETTINGS</a>, <a href="RequestType$$ECHO$.html" class="extype" name="pogoprotos.networking.requests.RequestType.ECHO">ECHO</a>, <a href="RequestType$$ENCOUNTER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.ENCOUNTER">ENCOUNTER</a>, <a href="RequestType$$ENCOUNTER_TUTORIAL_COMPLETE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.ENCOUNTER_TUTORIAL_COMPLETE">ENCOUNTER_TUTORIAL_COMPLETE</a>, <a href="RequestType$$EQUIP_BADGE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.EQUIP_BADGE">EQUIP_BADGE</a>, <a href="RequestType$$EVOLVE_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.EVOLVE_POKEMON">EVOLVE_POKEMON</a>, <a href="RequestType$$FORT_DEPLOY_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.FORT_DEPLOY_POKEMON">FORT_DEPLOY_POKEMON</a>, <a href="RequestType$$FORT_DETAILS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.FORT_DETAILS">FORT_DETAILS</a>, <a href="RequestType$$FORT_RECALL_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.FORT_RECALL_POKEMON">FORT_RECALL_POKEMON</a>, <a href="RequestType$$FORT_SEARCH$.html" class="extype" name="pogoprotos.networking.requests.RequestType.FORT_SEARCH">FORT_SEARCH</a>, <a href="RequestType$$GET_ASSET_DIGEST$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_ASSET_DIGEST">GET_ASSET_DIGEST</a>, <a href="RequestType$$GET_DOWNLOAD_URLS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_DOWNLOAD_URLS">GET_DOWNLOAD_URLS</a>, <a href="RequestType$$GET_GYM_DETAILS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_GYM_DETAILS">GET_GYM_DETAILS</a>, <a href="RequestType$$GET_HATCHED_EGGS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_HATCHED_EGGS">GET_HATCHED_EGGS</a>, <a href="RequestType$$GET_INCENSE_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_INCENSE_POKEMON">GET_INCENSE_POKEMON</a>, <a href="RequestType$$GET_INVENTORY$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_INVENTORY">GET_INVENTORY</a>, <a href="RequestType$$GET_ITEM_PACK$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_ITEM_PACK">GET_ITEM_PACK</a>, <a href="RequestType$$GET_MAP_OBJECTS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_MAP_OBJECTS">GET_MAP_OBJECTS</a>, <a href="RequestType$$GET_PLAYER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_PLAYER">GET_PLAYER</a>, <a href="RequestType$$GET_PLAYER_PROFILE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_PLAYER_PROFILE">GET_PLAYER_PROFILE</a>, <a href="RequestType$$GET_SUGGESTED_CODENAMES$.html" class="extype" name="pogoprotos.networking.requests.RequestType.GET_SUGGESTED_CODENAMES">GET_SUGGESTED_CODENAMES</a>, <a href="RequestType$$INCENSE_ENCOUNTER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.INCENSE_ENCOUNTER">INCENSE_ENCOUNTER</a>, <a href="RequestType$$ITEM_USE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.ITEM_USE">ITEM_USE</a>, <a href="RequestType$$LEVEL_UP_REWARDS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.LEVEL_UP_REWARDS">LEVEL_UP_REWARDS</a>, <a href="RequestType$$LOAD_SPAWN_POINTS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.LOAD_SPAWN_POINTS">LOAD_SPAWN_POINTS</a>, <a href="RequestType$$MARK_TUTORIAL_COMPLETE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.MARK_TUTORIAL_COMPLETE">MARK_TUTORIAL_COMPLETE</a>, <a href="RequestType$$METHOD_UNSET$.html" class="extype" name="pogoprotos.networking.requests.RequestType.METHOD_UNSET">METHOD_UNSET</a>, <a href="RequestType$$NICKNAME_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.NICKNAME_POKEMON">NICKNAME_POKEMON</a>, <a href="RequestType$$PLAYER_UPDATE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.PLAYER_UPDATE">PLAYER_UPDATE</a>, <a href="RequestType$$RECYCLE_INVENTORY_ITEM$.html" class="extype" name="pogoprotos.networking.requests.RequestType.RECYCLE_INVENTORY_ITEM">RECYCLE_INVENTORY_ITEM</a>, <a href="RequestType$$RELEASE_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.RELEASE_POKEMON">RELEASE_POKEMON</a>, <a href="RequestType$$SET_AVATAR$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SET_AVATAR">SET_AVATAR</a>, <a href="RequestType$$SET_CONTACT_SETTINGS$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SET_CONTACT_SETTINGS">SET_CONTACT_SETTINGS</a>, <a href="RequestType$$SET_FAVORITE_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SET_FAVORITE_POKEMON">SET_FAVORITE_POKEMON</a>, <a href="RequestType$$SET_PLAYER_TEAM$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SET_PLAYER_TEAM">SET_PLAYER_TEAM</a>, <a href="RequestType$$SFIDA_ACTION$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_ACTION">SFIDA_ACTION</a>, <a href="RequestType$$SFIDA_ACTION_LOG$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_ACTION_LOG">SFIDA_ACTION_LOG</a>, <a href="RequestType$$SFIDA_CAPTURE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_CAPTURE">SFIDA_CAPTURE</a>, <a href="RequestType$$SFIDA_CERTIFICATION$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_CERTIFICATION">SFIDA_CERTIFICATION</a>, <a href="RequestType$$SFIDA_DOWSER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_DOWSER">SFIDA_DOWSER</a>, <a href="RequestType$$SFIDA_REGISTRATION$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_REGISTRATION">SFIDA_REGISTRATION</a>, <a href="RequestType$$SFIDA_UPDATE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.SFIDA_UPDATE">SFIDA_UPDATE</a>, <a href="RequestType$$START_GYM_BATTLE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.START_GYM_BATTLE">START_GYM_BATTLE</a>, <a href="RequestType$$TRADE_OFFER$.html" class="extype" name="pogoprotos.networking.requests.RequestType.TRADE_OFFER">TRADE_OFFER</a>, <a href="RequestType$$TRADE_RESPONSE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.TRADE_RESPONSE">TRADE_RESPONSE</a>, <a href="RequestType$$TRADE_RESULT$.html" class="extype" name="pogoprotos.networking.requests.RequestType.TRADE_RESULT">TRADE_RESULT</a>, <a href="RequestType$$TRADE_SEARCH$.html" class="extype" name="pogoprotos.networking.requests.RequestType.TRADE_SEARCH">TRADE_SEARCH</a>, <a href="RequestType$$UPGRADE_POKEMON$.html" class="extype" name="pogoprotos.networking.requests.RequestType.UPGRADE_POKEMON">UPGRADE_POKEMON</a>, <a href="RequestType$$USE_INCENSE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_INCENSE">USE_INCENSE</a>, <a href="RequestType$$USE_ITEM_CAPTURE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_CAPTURE">USE_ITEM_CAPTURE</a>, <a href="RequestType$$USE_ITEM_EGG_INCUBATOR$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_EGG_INCUBATOR">USE_ITEM_EGG_INCUBATOR</a>, <a href="RequestType$$USE_ITEM_FLEE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_FLEE">USE_ITEM_FLEE</a>, <a href="RequestType$$USE_ITEM_GYM$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_GYM">USE_ITEM_GYM</a>, <a href="RequestType$$USE_ITEM_POTION$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_POTION">USE_ITEM_POTION</a>, <a href="RequestType$$USE_ITEM_REVIVE$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_REVIVE">USE_ITEM_REVIVE</a>, <a href="RequestType$$USE_ITEM_XP_BOOST$.html" class="extype" name="pogoprotos.networking.requests.RequestType.USE_ITEM_XP_BOOST">USE_ITEM_XP_BOOST</a>, <a href="RequestType$$Unrecognized.html" class="extype" name="pogoprotos.networking.requests.RequestType.Unrecognized">Unrecognized</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="pogoprotos.networking.requests.RequestType"><span>RequestType</span></li><li class="in" name="com.trueaccord.scalapb.GeneratedEnum"><span>GeneratedEnum</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="pogoprotos.networking.requests.RequestType.EnumType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EnumType=pogoprotos.networking.requests.RequestType"></a>
+      <a id="EnumType:EnumType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">EnumType</span><span class="result"> = <a href="" class="extype" name="pogoprotos.networking.requests.RequestType">RequestType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@EnumType=pogoprotos.networking.requests.RequestType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.networking.requests.RequestType">RequestType</a> → GeneratedEnum</dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="scala.Equals#canEqual" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="canEqual(that:Any):Boolean"></a>
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@canEqual(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Equals</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedEnum#index" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="index:Int"></a>
+      <a id="index:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">index</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@index:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedEnum</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedEnum#name" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@name:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedEnum</dd></dl></div>
+    </li><li name="scala.Product#productArity" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="productArity:Int"></a>
+      <a id="productArity:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productArity</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@productArity:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li name="scala.Product#productElement" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="productElement(n:Int):Any"></a>
+      <a id="productElement(Int):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productElement</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@productElement(n:Int):Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedEnum#value" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="value:Int"></a>
+      <a id="value:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@value:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedEnum</dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.networking.requests.RequestType#companion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="companion:com.trueaccord.scalapb.GeneratedEnumCompanion[pogoprotos.networking.requests.RequestType]"></a>
+      <a id="companion:GeneratedEnumCompanion[RequestType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">companion</span><span class="result">: <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="" class="extype" name="pogoprotos.networking.requests.RequestType">RequestType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@companion:com.trueaccord.scalapb.GeneratedEnumCompanion[pogoprotos.networking.requests.RequestType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.networking.requests.RequestType">RequestType</a> → GeneratedEnum</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.networking.requests.RequestType#isAddFortModifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isAddFortModifier:Boolean"></a>
+      <a id="isAddFortModifier:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isAddFortModifier</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isAddFortModifier:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isAttackGym" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isAttackGym:Boolean"></a>
+      <a id="isAttackGym:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isAttackGym</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isAttackGym:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isBuyGemPack" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isBuyGemPack:Boolean"></a>
+      <a id="isBuyGemPack:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isBuyGemPack</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isBuyGemPack:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isBuyItemPack" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isBuyItemPack:Boolean"></a>
+      <a id="isBuyItemPack:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isBuyItemPack</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isBuyItemPack:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isCatchPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isCatchPokemon:Boolean"></a>
+      <a id="isCatchPokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCatchPokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isCatchPokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isCheckAwardedBadges" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isCheckAwardedBadges:Boolean"></a>
+      <a id="isCheckAwardedBadges:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCheckAwardedBadges</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isCheckAwardedBadges:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isCheckCodenameAvailable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isCheckCodenameAvailable:Boolean"></a>
+      <a id="isCheckCodenameAvailable:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCheckCodenameAvailable</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isCheckCodenameAvailable:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isClaimCodename" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isClaimCodename:Boolean"></a>
+      <a id="isClaimCodename:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isClaimCodename</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isClaimCodename:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isCollectDailyBonus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isCollectDailyBonus:Boolean"></a>
+      <a id="isCollectDailyBonus:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCollectDailyBonus</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isCollectDailyBonus:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isCollectDailyDefenderBonus" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isCollectDailyDefenderBonus:Boolean"></a>
+      <a id="isCollectDailyDefenderBonus:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCollectDailyDefenderBonus</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isCollectDailyDefenderBonus:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isDebugDeletePlayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDebugDeletePlayer:Boolean"></a>
+      <a id="isDebugDeletePlayer:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDebugDeletePlayer</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isDebugDeletePlayer:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isDebugUpdateInventory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDebugUpdateInventory:Boolean"></a>
+      <a id="isDebugUpdateInventory:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDebugUpdateInventory</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isDebugUpdateInventory:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isDiskEncounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDiskEncounter:Boolean"></a>
+      <a id="isDiskEncounter:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDiskEncounter</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isDiskEncounter:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isDownloadItemTemplates" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDownloadItemTemplates:Boolean"></a>
+      <a id="isDownloadItemTemplates:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDownloadItemTemplates</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isDownloadItemTemplates:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isDownloadRemoteConfigVersion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDownloadRemoteConfigVersion:Boolean"></a>
+      <a id="isDownloadRemoteConfigVersion:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDownloadRemoteConfigVersion</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isDownloadRemoteConfigVersion:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isDownloadSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDownloadSettings:Boolean"></a>
+      <a id="isDownloadSettings:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDownloadSettings</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isDownloadSettings:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isEcho" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isEcho:Boolean"></a>
+      <a id="isEcho:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEcho</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isEcho:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isEncounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isEncounter:Boolean"></a>
+      <a id="isEncounter:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEncounter</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isEncounter:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isEncounterTutorialComplete" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isEncounterTutorialComplete:Boolean"></a>
+      <a id="isEncounterTutorialComplete:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEncounterTutorialComplete</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isEncounterTutorialComplete:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isEquipBadge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isEquipBadge:Boolean"></a>
+      <a id="isEquipBadge:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEquipBadge</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isEquipBadge:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isEvolvePokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isEvolvePokemon:Boolean"></a>
+      <a id="isEvolvePokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEvolvePokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isEvolvePokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isFortDeployPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isFortDeployPokemon:Boolean"></a>
+      <a id="isFortDeployPokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFortDeployPokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isFortDeployPokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isFortDetails" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isFortDetails:Boolean"></a>
+      <a id="isFortDetails:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFortDetails</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isFortDetails:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isFortRecallPokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isFortRecallPokemon:Boolean"></a>
+      <a id="isFortRecallPokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFortRecallPokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isFortRecallPokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isFortSearch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isFortSearch:Boolean"></a>
+      <a id="isFortSearch:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFortSearch</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isFortSearch:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetAssetDigest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetAssetDigest:Boolean"></a>
+      <a id="isGetAssetDigest:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetAssetDigest</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetAssetDigest:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetDownloadUrls" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetDownloadUrls:Boolean"></a>
+      <a id="isGetDownloadUrls:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetDownloadUrls</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetDownloadUrls:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetGymDetails" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetGymDetails:Boolean"></a>
+      <a id="isGetGymDetails:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetGymDetails</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetGymDetails:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetHatchedEggs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetHatchedEggs:Boolean"></a>
+      <a id="isGetHatchedEggs:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetHatchedEggs</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetHatchedEggs:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetIncensePokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetIncensePokemon:Boolean"></a>
+      <a id="isGetIncensePokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetIncensePokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetIncensePokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetInventory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetInventory:Boolean"></a>
+      <a id="isGetInventory:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetInventory</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetInventory:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetItemPack" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetItemPack:Boolean"></a>
+      <a id="isGetItemPack:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetItemPack</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetItemPack:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetMapObjects" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetMapObjects:Boolean"></a>
+      <a id="isGetMapObjects:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetMapObjects</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetMapObjects:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetPlayer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetPlayer:Boolean"></a>
+      <a id="isGetPlayer:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetPlayer</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetPlayer:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetPlayerProfile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetPlayerProfile:Boolean"></a>
+      <a id="isGetPlayerProfile:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetPlayerProfile</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetPlayerProfile:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isGetSuggestedCodenames" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isGetSuggestedCodenames:Boolean"></a>
+      <a id="isGetSuggestedCodenames:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isGetSuggestedCodenames</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isGetSuggestedCodenames:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isIncenseEncounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isIncenseEncounter:Boolean"></a>
+      <a id="isIncenseEncounter:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isIncenseEncounter</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isIncenseEncounter:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.networking.requests.RequestType#isItemUse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isItemUse:Boolean"></a>
+      <a id="isItemUse:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isItemUse</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isItemUse:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isLevelUpRewards" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isLevelUpRewards:Boolean"></a>
+      <a id="isLevelUpRewards:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLevelUpRewards</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isLevelUpRewards:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isLoadSpawnPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isLoadSpawnPoints:Boolean"></a>
+      <a id="isLoadSpawnPoints:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLoadSpawnPoints</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isLoadSpawnPoints:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isMarkTutorialComplete" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isMarkTutorialComplete:Boolean"></a>
+      <a id="isMarkTutorialComplete:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isMarkTutorialComplete</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isMarkTutorialComplete:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isMethodUnset" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isMethodUnset:Boolean"></a>
+      <a id="isMethodUnset:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isMethodUnset</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isMethodUnset:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isNicknamePokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isNicknamePokemon:Boolean"></a>
+      <a id="isNicknamePokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNicknamePokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isNicknamePokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isPlayerUpdate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isPlayerUpdate:Boolean"></a>
+      <a id="isPlayerUpdate:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isPlayerUpdate</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isPlayerUpdate:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isRecycleInventoryItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isRecycleInventoryItem:Boolean"></a>
+      <a id="isRecycleInventoryItem:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isRecycleInventoryItem</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isRecycleInventoryItem:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isReleasePokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isReleasePokemon:Boolean"></a>
+      <a id="isReleasePokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isReleasePokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isReleasePokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSetAvatar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSetAvatar:Boolean"></a>
+      <a id="isSetAvatar:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSetAvatar</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSetAvatar:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSetContactSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSetContactSettings:Boolean"></a>
+      <a id="isSetContactSettings:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSetContactSettings</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSetContactSettings:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSetFavoritePokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSetFavoritePokemon:Boolean"></a>
+      <a id="isSetFavoritePokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSetFavoritePokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSetFavoritePokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSetPlayerTeam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSetPlayerTeam:Boolean"></a>
+      <a id="isSetPlayerTeam:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSetPlayerTeam</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSetPlayerTeam:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaAction:Boolean"></a>
+      <a id="isSfidaAction:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaAction</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaAction:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaActionLog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaActionLog:Boolean"></a>
+      <a id="isSfidaActionLog:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaActionLog</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaActionLog:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaCapture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaCapture:Boolean"></a>
+      <a id="isSfidaCapture:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaCapture</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaCapture:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaCertification" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaCertification:Boolean"></a>
+      <a id="isSfidaCertification:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaCertification</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaCertification:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaDowser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaDowser:Boolean"></a>
+      <a id="isSfidaDowser:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaDowser</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaDowser:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaRegistration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaRegistration:Boolean"></a>
+      <a id="isSfidaRegistration:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaRegistration</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaRegistration:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isSfidaUpdate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSfidaUpdate:Boolean"></a>
+      <a id="isSfidaUpdate:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSfidaUpdate</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isSfidaUpdate:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isStartGymBattle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isStartGymBattle:Boolean"></a>
+      <a id="isStartGymBattle:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isStartGymBattle</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isStartGymBattle:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isTradeOffer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isTradeOffer:Boolean"></a>
+      <a id="isTradeOffer:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTradeOffer</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isTradeOffer:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isTradeResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isTradeResponse:Boolean"></a>
+      <a id="isTradeResponse:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTradeResponse</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isTradeResponse:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isTradeResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isTradeResult:Boolean"></a>
+      <a id="isTradeResult:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTradeResult</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isTradeResult:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isTradeSearch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isTradeSearch:Boolean"></a>
+      <a id="isTradeSearch:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTradeSearch</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isTradeSearch:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUnrecognized" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUnrecognized:Boolean"></a>
+      <a id="isUnrecognized:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUnrecognized</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUnrecognized:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUpgradePokemon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUpgradePokemon:Boolean"></a>
+      <a id="isUpgradePokemon:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUpgradePokemon</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUpgradePokemon:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseIncense" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseIncense:Boolean"></a>
+      <a id="isUseIncense:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseIncense</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseIncense:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemCapture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemCapture:Boolean"></a>
+      <a id="isUseItemCapture:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemCapture</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemCapture:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemEggIncubator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemEggIncubator:Boolean"></a>
+      <a id="isUseItemEggIncubator:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemEggIncubator</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemEggIncubator:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemFlee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemFlee:Boolean"></a>
+      <a id="isUseItemFlee:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemFlee</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemFlee:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemGym" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemGym:Boolean"></a>
+      <a id="isUseItemGym:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemGym</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemGym:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemPotion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemPotion:Boolean"></a>
+      <a id="isUseItemPotion:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemPotion</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemPotion:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemRevive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemRevive:Boolean"></a>
+      <a id="isUseItemRevive:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemRevive</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemRevive:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.requests.RequestType#isUseItemXpBoost" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isUseItemXpBoost:Boolean"></a>
+      <a id="isUseItemXpBoost:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUseItemXpBoost</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@isUseItemXpBoost:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Product#productIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productIterator:Iterator[Any]"></a>
+      <a id="productIterator:Iterator[Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productIterator</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@productIterator:Iterator[Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li name="scala.Product#productPrefix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productPrefix:String"></a>
+      <a id="productPrefix:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@productPrefix:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedEnum#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedEnum → AnyRef → Any</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedEnum#valueDescriptor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valueDescriptor:com.google.protobuf.Descriptors.EnumValueDescriptor"></a>
+      <a id="valueDescriptor:EnumValueDescriptor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valueDescriptor</span><span class="result">: <span class="extype" name="com.google.protobuf.Descriptors.EnumValueDescriptor">EnumValueDescriptor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@valueDescriptor:com.google.protobuf.Descriptors.EnumValueDescriptor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedEnum</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.requests.RequestType@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="com.trueaccord.scalapb.GeneratedEnum">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

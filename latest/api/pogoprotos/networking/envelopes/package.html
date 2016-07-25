@@ -1,0 +1,374 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>envelopes - pogoprotos.networking.envelopes</title>
+          <meta name="description" content="envelopes - pogoprotos.networking.envelopes" />
+          <meta name="keywords" content="envelopes pogoprotos.networking.envelopes" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.networking.envelopes.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.networking">networking</a></p>
+        <h1>envelopes</h1><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">envelopes</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="pogoprotos.networking.envelopes.AuthTicket" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AuthTicketextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.AuthTicket]withUpdatable[pogoprotos.networking.envelopes.AuthTicket]withProductwithSerializable"></a>
+      <a id="AuthTicket:AuthTicket"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthTicket.html"><span class="name">AuthTicket</span></a><span class="params">(<span name="start">start: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span> = <span class="defval" name="com.google.protobuf.ByteString.EMPTY">...</span></span>, <span name="expireTimestampMs">expireTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="end">end: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span> = <span class="defval" name="com.google.protobuf.ByteString.EMPTY">...</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="AuthTicket.html" class="extype" name="pogoprotos.networking.envelopes.AuthTicket">AuthTicket</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="AuthTicket.html" class="extype" name="pogoprotos.networking.envelopes.AuthTicket">AuthTicket</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@AuthTicketextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.AuthTicket]withUpdatable[pogoprotos.networking.envelopes.AuthTicket]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.networking.envelopes.RequestEnvelope" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestEnvelopeextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.RequestEnvelope]withUpdatable[pogoprotos.networking.envelopes.RequestEnvelope]withProductwithSerializable"></a>
+      <a id="RequestEnvelope:RequestEnvelope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestEnvelope.html"><span class="name">RequestEnvelope</span></a><span class="params">(<span name="statusCode">statusCode: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="requestId">requestId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="requests">requests: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../requests/Request.html" class="extype" name="pogoprotos.networking.requests.Request">Request</a>] = <span class="symbol">Nil</span></span>, <span name="unknown6">unknown6: <span class="extype" name="scala.Option">Option</span>[<a href="Unknown6.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6">Unknown6</a>] = <span class="symbol">None</span></span>, <span name="latitude">latitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="longitude">longitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="altitude">altitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="authInfo">authInfo: <span class="extype" name="scala.Option">Option</span>[<a href="RequestEnvelope$$AuthInfo.html" class="extype" name="pogoprotos.networking.envelopes.RequestEnvelope.AuthInfo">AuthInfo</a>] = <span class="symbol">None</span></span>, <span name="authTicket">authTicket: <span class="extype" name="scala.Option">Option</span>[<a href="AuthTicket.html" class="extype" name="pogoprotos.networking.envelopes.AuthTicket">AuthTicket</a>] = <span class="symbol">None</span></span>, <span name="unknown12">unknown12: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="RequestEnvelope.html" class="extype" name="pogoprotos.networking.envelopes.RequestEnvelope">RequestEnvelope</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="RequestEnvelope.html" class="extype" name="pogoprotos.networking.envelopes.RequestEnvelope">RequestEnvelope</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@RequestEnvelopeextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.RequestEnvelope]withUpdatable[pogoprotos.networking.envelopes.RequestEnvelope]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.networking.envelopes.ResponseEnvelope" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ResponseEnvelopeextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.ResponseEnvelope]withUpdatable[pogoprotos.networking.envelopes.ResponseEnvelope]withProductwithSerializable"></a>
+      <a id="ResponseEnvelope:ResponseEnvelope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ResponseEnvelope.html"><span class="name">ResponseEnvelope</span></a><span class="params">(<span name="statusCode">statusCode: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="requestId">requestId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="apiUrl">apiUrl: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="unknown6">unknown6: <span class="extype" name="scala.Option">Option</span>[<a href="Unknown6Response.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6Response">Unknown6Response</a>] = <span class="symbol">None</span></span>, <span name="authTicket">authTicket: <span class="extype" name="scala.Option">Option</span>[<a href="AuthTicket.html" class="extype" name="pogoprotos.networking.envelopes.AuthTicket">AuthTicket</a>] = <span class="symbol">None</span></span>, <span name="returns">returns: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="com.google.protobuf.ByteString">ByteString</span>] = <span class="symbol">Nil</span></span>, <span name="error">error: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="ResponseEnvelope.html" class="extype" name="pogoprotos.networking.envelopes.ResponseEnvelope">ResponseEnvelope</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="ResponseEnvelope.html" class="extype" name="pogoprotos.networking.envelopes.ResponseEnvelope">ResponseEnvelope</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@ResponseEnvelopeextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.ResponseEnvelope]withUpdatable[pogoprotos.networking.envelopes.ResponseEnvelope]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.networking.envelopes.Unknown6" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Unknown6extendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.Unknown6]withUpdatable[pogoprotos.networking.envelopes.Unknown6]withProductwithSerializable"></a>
+      <a id="Unknown6:Unknown6"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Unknown6.html"><span class="name">Unknown6</span></a><span class="params">(<span name="unknown1">unknown1: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="unknown2">unknown2: <span class="extype" name="scala.Option">Option</span>[<a href="Unknown6$$Unknown2.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6.Unknown2">Unknown2</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="Unknown6.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6">Unknown6</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="Unknown6.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6">Unknown6</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@Unknown6extendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.Unknown6]withUpdatable[pogoprotos.networking.envelopes.Unknown6]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.networking.envelopes.Unknown6Response" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Unknown6ResponseextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.Unknown6Response]withUpdatable[pogoprotos.networking.envelopes.Unknown6Response]withProductwithSerializable"></a>
+      <a id="Unknown6Response:Unknown6Response"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Unknown6Response.html"><span class="name">Unknown6Response</span></a><span class="params">(<span name="unknown1">unknown1: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="unknown2">unknown2: <span class="extype" name="scala.Option">Option</span>[<a href="Unknown6Response$$Unknown2.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6Response.Unknown2">Unknown2</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="Unknown6Response.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6Response">Unknown6Response</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="Unknown6Response.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6Response">Unknown6Response</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@Unknown6ResponseextendsGeneratedMessagewithMessage[pogoprotos.networking.envelopes.Unknown6Response]withUpdatable[pogoprotos.networking.envelopes.Unknown6Response]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="pogoprotos.networking.envelopes.AuthTicket" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AuthTicket"></a>
+      <a id="AuthTicket:AuthTicket"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthTicket$.html"><span class="name">AuthTicket</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="AuthTicket.html" class="extype" name="pogoprotos.networking.envelopes.AuthTicket">AuthTicket</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@AuthTicket" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.AuthTicketProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AuthTicketProto"></a>
+      <a id="AuthTicketProto:AuthTicketProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthTicketProto$.html"><span class="name">AuthTicketProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@AuthTicketProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.RequestEnvelope" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RequestEnvelope"></a>
+      <a id="RequestEnvelope:RequestEnvelope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestEnvelope$.html"><span class="name">RequestEnvelope</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="RequestEnvelope.html" class="extype" name="pogoprotos.networking.envelopes.RequestEnvelope">RequestEnvelope</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@RequestEnvelope" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.RequestEnvelopeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RequestEnvelopeProto"></a>
+      <a id="RequestEnvelopeProto:RequestEnvelopeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestEnvelopeProto$.html"><span class="name">RequestEnvelopeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@RequestEnvelopeProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.ResponseEnvelope" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResponseEnvelope"></a>
+      <a id="ResponseEnvelope:ResponseEnvelope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ResponseEnvelope$.html"><span class="name">ResponseEnvelope</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="ResponseEnvelope.html" class="extype" name="pogoprotos.networking.envelopes.ResponseEnvelope">ResponseEnvelope</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@ResponseEnvelope" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.ResponseEnvelopeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResponseEnvelopeProto"></a>
+      <a id="ResponseEnvelopeProto:ResponseEnvelopeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ResponseEnvelopeProto$.html"><span class="name">ResponseEnvelopeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@ResponseEnvelopeProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.Unknown6" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Unknown6"></a>
+      <a id="Unknown6:Unknown6"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Unknown6$.html"><span class="name">Unknown6</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="Unknown6.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6">Unknown6</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@Unknown6" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.Unknown6Proto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Unknown6Proto"></a>
+      <a id="Unknown6Proto:Unknown6Proto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Unknown6Proto$.html"><span class="name">Unknown6Proto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@Unknown6Proto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.Unknown6Response" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Unknown6Response"></a>
+      <a id="Unknown6Response:Unknown6Response"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Unknown6Response$.html"><span class="name">Unknown6Response</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="Unknown6Response.html" class="extype" name="pogoprotos.networking.envelopes.Unknown6Response">Unknown6Response</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@Unknown6Response" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.networking.envelopes.Unknown6ResponseProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Unknown6ResponseProto"></a>
+      <a id="Unknown6ResponseProto:Unknown6ResponseProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Unknown6ResponseProto$.html"><span class="name">Unknown6ResponseProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.networking.envelopes.package@Unknown6ResponseProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

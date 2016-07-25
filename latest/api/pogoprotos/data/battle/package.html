@@ -1,0 +1,527 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>battle - pogoprotos.data.battle</title>
+          <meta name="description" content="battle - pogoprotos.data.battle" />
+          <meta name="keywords" content="battle pogoprotos.data.battle" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.data.battle.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.data">data</a></p>
+        <h1>battle</h1><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">battle</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="pogoprotos.data.battle.BattleAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BattleActionextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleAction]withUpdatable[pogoprotos.data.battle.BattleAction]withProductwithSerializable"></a>
+      <a id="BattleAction:BattleAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleAction.html"><span class="name">BattleAction</span></a><span class="params">(<span name="type">type: <a href="BattleActionType.html" class="extype" name="pogoprotos.data.battle.BattleActionType">BattleActionType</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.data.battle.BattleActionType.ACTION_UNSET</a></span>'>...</span></span>, <span name="actionStartMs">actionStartMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="durationMs">durationMs: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="energyDelta">energyDelta: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="attackerIndex">attackerIndex: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="targetIndex">targetIndex: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="activePokemonId">activePokemonId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="playerJoined">playerJoined: <span class="extype" name="scala.Option">Option</span>[<a href="BattleParticipant.html" class="extype" name="pogoprotos.data.battle.BattleParticipant">BattleParticipant</a>] = <span class="symbol">None</span></span>, <span name="battleResults">battleResults: <span class="extype" name="scala.Option">Option</span>[<a href="BattleResults.html" class="extype" name="pogoprotos.data.battle.BattleResults">BattleResults</a>] = <span class="symbol">None</span></span>, <span name="damageWindowsStartTimestampMss">damageWindowsStartTimestampMss: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="damageWindowsEndTimestampMss">damageWindowsEndTimestampMss: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="playerLeft">playerLeft: <span class="extype" name="scala.Option">Option</span>[<a href="BattleParticipant.html" class="extype" name="pogoprotos.data.battle.BattleParticipant">BattleParticipant</a>] = <span class="symbol">None</span></span>, <span name="targetPokemonId">targetPokemonId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="BattleAction.html" class="extype" name="pogoprotos.data.battle.BattleAction">BattleAction</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="BattleAction.html" class="extype" name="pogoprotos.data.battle.BattleAction">BattleAction</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleActionextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleAction]withUpdatable[pogoprotos.data.battle.BattleAction]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.battle.BattleActionType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BattleActionTypeextendsGeneratedEnum"></a>
+      <a id="BattleActionType:BattleActionType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleActionType.html"><span class="name">BattleActionType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleActionTypeextendsGeneratedEnum" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleLog" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BattleLogextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleLog]withUpdatable[pogoprotos.data.battle.BattleLog]withProductwithSerializable"></a>
+      <a id="BattleLog:BattleLog"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleLog.html"><span class="name">BattleLog</span></a><span class="params">(<span name="state">state: <a href="BattleState.html" class="extype" name="pogoprotos.data.battle.BattleState">BattleState</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.data.battle.BattleState.STATE_UNSET</a></span>'>...</span></span>, <span name="battleType">battleType: <a href="BattleType.html" class="extype" name="pogoprotos.data.battle.BattleType">BattleType</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.data.battle.BattleType.BATTLE_TYPE_UNSET</a></span>'>...</span></span>, <span name="serverMs">serverMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="battleActions">battleActions: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="BattleAction.html" class="extype" name="pogoprotos.data.battle.BattleAction">BattleAction</a>] = <span class="symbol">Nil</span></span>, <span name="battleStartTimestampMs">battleStartTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="battleEndTimestampMs">battleEndTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="BattleLog.html" class="extype" name="pogoprotos.data.battle.BattleLog">BattleLog</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="BattleLog.html" class="extype" name="pogoprotos.data.battle.BattleLog">BattleLog</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleLogextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleLog]withUpdatable[pogoprotos.data.battle.BattleLog]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.battle.BattleParticipant" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BattleParticipantextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleParticipant]withUpdatable[pogoprotos.data.battle.BattleParticipant]withProductwithSerializable"></a>
+      <a id="BattleParticipant:BattleParticipant"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleParticipant.html"><span class="name">BattleParticipant</span></a><span class="params">(<span name="activePokemon">activePokemon: <span class="extype" name="scala.Option">Option</span>[<a href="BattlePokemonInfo.html" class="extype" name="pogoprotos.data.battle.BattlePokemonInfo">BattlePokemonInfo</a>] = <span class="symbol">None</span></span>, <span name="trainerPublicProfile">trainerPublicProfile: <span class="extype" name="scala.Option">Option</span>[<a href="../player/PlayerPublicProfile.html" class="extype" name="pogoprotos.data.player.PlayerPublicProfile">PlayerPublicProfile</a>] = <span class="symbol">None</span></span>, <span name="reversePokemon">reversePokemon: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="BattlePokemonInfo.html" class="extype" name="pogoprotos.data.battle.BattlePokemonInfo">BattlePokemonInfo</a>] = <span class="symbol">Nil</span></span>, <span name="defeatedPokemon">defeatedPokemon: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="BattlePokemonInfo.html" class="extype" name="pogoprotos.data.battle.BattlePokemonInfo">BattlePokemonInfo</a>] = <span class="symbol">Nil</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="BattleParticipant.html" class="extype" name="pogoprotos.data.battle.BattleParticipant">BattleParticipant</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="BattleParticipant.html" class="extype" name="pogoprotos.data.battle.BattleParticipant">BattleParticipant</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleParticipantextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleParticipant]withUpdatable[pogoprotos.data.battle.BattleParticipant]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.battle.BattlePokemonInfo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BattlePokemonInfoextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattlePokemonInfo]withUpdatable[pogoprotos.data.battle.BattlePokemonInfo]withProductwithSerializable"></a>
+      <a id="BattlePokemonInfo:BattlePokemonInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BattlePokemonInfo.html"><span class="name">BattlePokemonInfo</span></a><span class="params">(<span name="pokemonData">pokemonData: <span class="extype" name="scala.Option">Option</span>[<a href="../PokemonData.html" class="extype" name="pogoprotos.data.PokemonData">PokemonData</a>] = <span class="symbol">None</span></span>, <span name="currentHealth">currentHealth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="currentEnergy">currentEnergy: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="BattlePokemonInfo.html" class="extype" name="pogoprotos.data.battle.BattlePokemonInfo">BattlePokemonInfo</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="BattlePokemonInfo.html" class="extype" name="pogoprotos.data.battle.BattlePokemonInfo">BattlePokemonInfo</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattlePokemonInfoextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattlePokemonInfo]withUpdatable[pogoprotos.data.battle.BattlePokemonInfo]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.battle.BattleResults" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BattleResultsextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleResults]withUpdatable[pogoprotos.data.battle.BattleResults]withProductwithSerializable"></a>
+      <a id="BattleResults:BattleResults"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleResults.html"><span class="name">BattleResults</span></a><span class="params">(<span name="gymState">gymState: <span class="extype" name="scala.Option">Option</span>[<a href="../gym/GymState.html" class="extype" name="pogoprotos.data.gym.GymState">GymState</a>] = <span class="symbol">None</span></span>, <span name="attackers">attackers: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="BattleParticipant.html" class="extype" name="pogoprotos.data.battle.BattleParticipant">BattleParticipant</a>] = <span class="symbol">Nil</span></span>, <span name="playerExperienceAwarded">playerExperienceAwarded: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">Nil</span></span>, <span name="nextDefenderPokemonId">nextDefenderPokemonId: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="gymPointsDelta">gymPointsDelta: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="BattleResults.html" class="extype" name="pogoprotos.data.battle.BattleResults">BattleResults</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="BattleResults.html" class="extype" name="pogoprotos.data.battle.BattleResults">BattleResults</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleResultsextendsGeneratedMessagewithMessage[pogoprotos.data.battle.BattleResults]withUpdatable[pogoprotos.data.battle.BattleResults]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.data.battle.BattleState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BattleStateextendsGeneratedEnum"></a>
+      <a id="BattleState:BattleState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleState.html"><span class="name">BattleState</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleStateextendsGeneratedEnum" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BattleTypeextendsGeneratedEnum"></a>
+      <a id="BattleType:BattleType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleType.html"><span class="name">BattleType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnum">GeneratedEnum</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleTypeextendsGeneratedEnum" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="pogoprotos.data.battle.BattleAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleAction"></a>
+      <a id="BattleAction:BattleAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleAction$.html"><span class="name">BattleAction</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="BattleAction.html" class="extype" name="pogoprotos.data.battle.BattleAction">BattleAction</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleAction" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleActionProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleActionProto"></a>
+      <a id="BattleActionProto:BattleActionProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleActionProto$.html"><span class="name">BattleActionProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleActionProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleActionType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleActionType"></a>
+      <a id="BattleActionType:BattleActionType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleActionType$.html"><span class="name">BattleActionType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="BattleActionType.html" class="extype" name="pogoprotos.data.battle.BattleActionType">BattleActionType</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleActionType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleActionTypeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleActionTypeProto"></a>
+      <a id="BattleActionTypeProto:BattleActionTypeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleActionTypeProto$.html"><span class="name">BattleActionTypeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleActionTypeProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleLog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleLog"></a>
+      <a id="BattleLog:BattleLog"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleLog$.html"><span class="name">BattleLog</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="BattleLog.html" class="extype" name="pogoprotos.data.battle.BattleLog">BattleLog</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleLog" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleLogProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleLogProto"></a>
+      <a id="BattleLogProto:BattleLogProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleLogProto$.html"><span class="name">BattleLogProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleLogProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleParticipant" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleParticipant"></a>
+      <a id="BattleParticipant:BattleParticipant"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleParticipant$.html"><span class="name">BattleParticipant</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="BattleParticipant.html" class="extype" name="pogoprotos.data.battle.BattleParticipant">BattleParticipant</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleParticipant" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleParticipantProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleParticipantProto"></a>
+      <a id="BattleParticipantProto:BattleParticipantProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleParticipantProto$.html"><span class="name">BattleParticipantProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleParticipantProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattlePokemonInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattlePokemonInfo"></a>
+      <a id="BattlePokemonInfo:BattlePokemonInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattlePokemonInfo$.html"><span class="name">BattlePokemonInfo</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="BattlePokemonInfo.html" class="extype" name="pogoprotos.data.battle.BattlePokemonInfo">BattlePokemonInfo</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattlePokemonInfo" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattlePokemonInfoProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattlePokemonInfoProto"></a>
+      <a id="BattlePokemonInfoProto:BattlePokemonInfoProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattlePokemonInfoProto$.html"><span class="name">BattlePokemonInfoProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattlePokemonInfoProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleResults" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleResults"></a>
+      <a id="BattleResults:BattleResults"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleResults$.html"><span class="name">BattleResults</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessageCompanion">GeneratedMessageCompanion</span>[<a href="BattleResults.html" class="extype" name="pogoprotos.data.battle.BattleResults">BattleResults</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleResults" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleResultsProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleResultsProto"></a>
+      <a id="BattleResultsProto:BattleResultsProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleResultsProto$.html"><span class="name">BattleResultsProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleResultsProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleState"></a>
+      <a id="BattleState:BattleState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleState$.html"><span class="name">BattleState</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="BattleState.html" class="extype" name="pogoprotos.data.battle.BattleState">BattleState</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleState" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleStateProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleStateProto"></a>
+      <a id="BattleStateProto:BattleStateProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleStateProto$.html"><span class="name">BattleStateProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleStateProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleType"></a>
+      <a id="BattleType:BattleType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleType$.html"><span class="name">BattleType</span></a><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedEnumCompanion">GeneratedEnumCompanion</span>[<a href="BattleType.html" class="extype" name="pogoprotos.data.battle.BattleType">BattleType</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.data.battle.BattleTypeProto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BattleTypeProto"></a>
+      <a id="BattleTypeProto:BattleTypeProto"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BattleTypeProto$.html"><span class="name">BattleTypeProto</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.data.battle.package@BattleTypeProto" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,1235 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>FortData - pogoprotos.map.fort.FortData</title>
+          <meta name="description" content="FortData - pogoprotos.map.fort.FortData" />
+          <meta name="keywords" content="FortData pogoprotos.map.fort.FortData" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'pogoprotos.map.fort.FortData';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="FortData$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="pogoprotos">pogoprotos</a>.<a href="../package.html" class="extype" name="pogoprotos.map">map</a>.<a href="package.html" class="extype" name="pogoprotos.map.fort">fort</a></p>
+        <h1><a href="FortData$.html" title="See companion object">FortData</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="FortData$.html" title="See companion object">object FortData</a>
+            | <a href="package.html" class="extype" name="pogoprotos.map.fort">package fort</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FortData</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="lastModifiedTimestampMs">lastModifiedTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="latitude">latitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="longitude">longitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="enabled">enabled: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="type">type: <a href="FortType.html" class="extype" name="pogoprotos.map.fort.FortType">FortType</a> = <span class="symbol"><span class="name"><a href="../../package.html">pogoprotos.map.fort.FortType.GYM</a></span></span></span>, <span name="ownedByTeam">ownedByTeam: <a href="../../enums/TeamColor.html" class="extype" name="pogoprotos.enums.TeamColor">TeamColor</a> = <span class="symbol"><span class="name"><a href="../../package.html">pogoprotos.enums.TeamColor.NEUTRAL</a></span></span></span>, <span name="guardPokemonId">guardPokemonId: <a href="../../enums/PokemonId.html" class="extype" name="pogoprotos.enums.PokemonId">PokemonId</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.enums.PokemonId.MISSINGNO</a></span>'>...</span></span>, <span name="guardPokemonCp">guardPokemonCp: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="gymPoints">gymPoints: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="isInBattle">isInBattle: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="cooldownCompleteTimestampMs">cooldownCompleteTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="sponsor">sponsor: <a href="FortSponsor.html" class="extype" name="pogoprotos.map.fort.FortSponsor">FortSponsor</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.map.fort.FortSponsor.UNSET_SPONSOR</a></span>'>...</span></span>, <span name="renderingType">renderingType: <a href="FortRenderingType.html" class="extype" name="pogoprotos.map.fort.FortRenderingType">FortRenderingType</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.map.fort.FortRenderingType.DEFAULT</a></span>'>...</span></span>, <span name="activeFortModifier">activeFortModifier: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span> = <span class="defval" name="com.google.protobuf.ByteString.EMPTY">...</span></span>, <span name="lureInfo">lureInfo: <span class="extype" name="scala.Option">Option</span>[<a href="FortLureInfo.html" class="extype" name="pogoprotos.map.fort.FortLureInfo">FortLureInfo</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span> with <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>] with <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>], <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>], <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="pogoprotos.map.fort.FortData"><span>FortData</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.trueaccord.lenses.Updatable"><span>Updatable</span></li><li class="in" name="com.trueaccord.scalapb.Message"><span>Message</span></li><li class="in" name="com.trueaccord.scalapb.GeneratedMessage"><span>GeneratedMessage</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="pogoprotos.map.fort.FortData#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(id:String,lastModifiedTimestampMs:Long,latitude:Double,longitude:Double,enabled:Boolean,type:pogoprotos.map.fort.FortType,ownedByTeam:pogoprotos.enums.TeamColor,guardPokemonId:pogoprotos.enums.PokemonId,guardPokemonCp:Int,gymPoints:Long,isInBattle:Boolean,cooldownCompleteTimestampMs:Long,sponsor:pogoprotos.map.fort.FortSponsor,renderingType:pogoprotos.map.fort.FortRenderingType,activeFortModifier:com.google.protobuf.ByteString,lureInfo:Option[pogoprotos.map.fort.FortLureInfo]):pogoprotos.map.fort.FortData"></a>
+      <a id="&lt;init&gt;:FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FortData</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="lastModifiedTimestampMs">lastModifiedTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="latitude">latitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="longitude">longitude: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.0</span></span>, <span name="enabled">enabled: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="type">type: <a href="FortType.html" class="extype" name="pogoprotos.map.fort.FortType">FortType</a> = <span class="symbol"><span class="name"><a href="../../package.html">pogoprotos.map.fort.FortType.GYM</a></span></span></span>, <span name="ownedByTeam">ownedByTeam: <a href="../../enums/TeamColor.html" class="extype" name="pogoprotos.enums.TeamColor">TeamColor</a> = <span class="symbol"><span class="name"><a href="../../package.html">pogoprotos.enums.TeamColor.NEUTRAL</a></span></span></span>, <span name="guardPokemonId">guardPokemonId: <a href="../../enums/PokemonId.html" class="extype" name="pogoprotos.enums.PokemonId">PokemonId</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.enums.PokemonId.MISSINGNO</a></span>'>...</span></span>, <span name="guardPokemonCp">guardPokemonCp: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="gymPoints">gymPoints: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="isInBattle">isInBattle: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="cooldownCompleteTimestampMs">cooldownCompleteTimestampMs: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="sponsor">sponsor: <a href="FortSponsor.html" class="extype" name="pogoprotos.map.fort.FortSponsor">FortSponsor</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.map.fort.FortSponsor.UNSET_SPONSOR</a></span>'>...</span></span>, <span name="renderingType">renderingType: <a href="FortRenderingType.html" class="extype" name="pogoprotos.map.fort.FortRenderingType">FortRenderingType</a> = <span class="defval" name='<span class="name"><a href="../../package.html">pogoprotos.map.fort.FortRenderingType.DEFAULT</a></span>'>...</span></span>, <span name="activeFortModifier">activeFortModifier: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span> = <span class="defval" name="com.google.protobuf.ByteString.EMPTY">...</span></span>, <span name="lureInfo">lureInfo: <span class="extype" name="scala.Option">Option</span>[<a href="FortLureInfo.html" class="extype" name="pogoprotos.map.fort.FortLureInfo">FortLureInfo</a>] = <span class="symbol">None</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@&lt;init&gt;(id:String,lastModifiedTimestampMs:Long,latitude:Double,longitude:Double,enabled:Boolean,type:pogoprotos.map.fort.FortType,ownedByTeam:pogoprotos.enums.TeamColor,guardPokemonId:pogoprotos.enums.PokemonId,guardPokemonCp:Int,gymPoints:Long,isInBattle:Boolean,cooldownCompleteTimestampMs:Long,sponsor:pogoprotos.map.fort.FortSponsor,renderingType:pogoprotos.map.fort.FortRenderingType,activeFortModifier:com.google.protobuf.ByteString,lureInfo:Option[pogoprotos.map.fort.FortLureInfo]):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#activeFortModifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="activeFortModifier:com.google.protobuf.ByteString"></a>
+      <a id="activeFortModifier:ByteString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activeFortModifier</span><span class="result">: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@activeFortModifier:com.google.protobuf.ByteString" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#clearLureInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clearLureInfo:pogoprotos.map.fort.FortData"></a>
+      <a id="clearLureInfo:FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearLureInfo</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@clearLureInfo:pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#companion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="companion:pogoprotos.map.fort.FortData.type"></a>
+      <a id="companion:FortData.type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">companion</span><span class="result">: <a href="FortData$.html" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>.type</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@companion:pogoprotos.map.fort.FortData.type" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#cooldownCompleteTimestampMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cooldownCompleteTimestampMs:Long"></a>
+      <a id="cooldownCompleteTimestampMs:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cooldownCompleteTimestampMs</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@cooldownCompleteTimestampMs:Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#enabled" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enabled:Boolean"></a>
+      <a id="enabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enabled</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@enabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#getAllFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]"></a>
+      <a id="getAllFields:Map[FieldDescriptor,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAllFields</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@getAllFields:Map[com.google.protobuf.Descriptors.FieldDescriptor,Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#getField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any"></a>
+      <a id="getField(FieldDescriptor):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getField</span><span class="params">(<span name="__field">__field: <span class="extype" name="com.google.protobuf.Descriptors.FieldDescriptor">FieldDescriptor</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@getField(__field:com.google.protobuf.Descriptors.FieldDescriptor):Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#getLureInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getLureInfo:pogoprotos.map.fort.FortLureInfo"></a>
+      <a id="getLureInfo:FortLureInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLureInfo</span><span class="result">: <a href="FortLureInfo.html" class="extype" name="pogoprotos.map.fort.FortLureInfo">FortLureInfo</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@getLureInfo:pogoprotos.map.fort.FortLureInfo" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#guardPokemonCp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="guardPokemonCp:Int"></a>
+      <a id="guardPokemonCp:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">guardPokemonCp</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@guardPokemonCp:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#guardPokemonId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="guardPokemonId:pogoprotos.enums.PokemonId"></a>
+      <a id="guardPokemonId:PokemonId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">guardPokemonId</span><span class="result">: <a href="../../enums/PokemonId.html" class="extype" name="pogoprotos.enums.PokemonId">PokemonId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@guardPokemonId:pogoprotos.enums.PokemonId" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#gymPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gymPoints:Long"></a>
+      <a id="gymPoints:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gymPoints</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@gymPoints:Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#id" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="id:String"></a>
+      <a id="id:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">id</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@id:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#isInBattle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isInBattle:Boolean"></a>
+      <a id="isInBattle:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInBattle</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@isInBattle:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#lastModifiedTimestampMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lastModifiedTimestampMs:Long"></a>
+      <a id="lastModifiedTimestampMs:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lastModifiedTimestampMs</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@lastModifiedTimestampMs:Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#latitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="latitude:Double"></a>
+      <a id="latitude:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">latitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@latitude:Double" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#longitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="longitude:Double"></a>
+      <a id="longitude:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">longitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@longitude:Double" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#lureInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lureInfo:Option[pogoprotos.map.fort.FortLureInfo]"></a>
+      <a id="lureInfo:Option[FortLureInfo]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lureInfo</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="FortLureInfo.html" class="extype" name="pogoprotos.map.fort.FortLureInfo">FortLureInfo</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@lureInfo:Option[pogoprotos.map.fort.FortLureInfo]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#mergeFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.map.fort.FortData"></a>
+      <a id="mergeFrom(CodedInputStream):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeFrom</span><span class="params">(<span name="_input__">_input__: <span class="extype" name="com.google.protobuf.CodedInputStream">CodedInputStream</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@mergeFrom(_input__:com.google.protobuf.CodedInputStream):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a> → Message</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#ownedByTeam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ownedByTeam:pogoprotos.enums.TeamColor"></a>
+      <a id="ownedByTeam:TeamColor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ownedByTeam</span><span class="result">: <a href="../../enums/TeamColor.html" class="extype" name="pogoprotos.enums.TeamColor">TeamColor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@ownedByTeam:pogoprotos.enums.TeamColor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#renderingType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="renderingType:pogoprotos.map.fort.FortRenderingType"></a>
+      <a id="renderingType:FortRenderingType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">renderingType</span><span class="result">: <a href="FortRenderingType.html" class="extype" name="pogoprotos.map.fort.FortRenderingType">FortRenderingType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@renderingType:pogoprotos.map.fort.FortRenderingType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#serializedSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serializedSize:Int"></a>
+      <a id="serializedSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serializedSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@serializedSize:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#sponsor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sponsor:pogoprotos.map.fort.FortSponsor"></a>
+      <a id="sponsor:FortSponsor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sponsor</span><span class="result">: <a href="FortSponsor.html" class="extype" name="pogoprotos.map.fort.FortSponsor">FortSponsor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@sponsor:pogoprotos.map.fort.FortSponsor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#toByteArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByteArray:Array[Byte]"></a>
+      <a id="toByteArray:Array[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByteArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@toByteArray:Array[Byte]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#type" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="type:pogoprotos.map.fort.FortType"></a>
+      <a id="type:FortType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">type</span><span class="result">: <a href="FortType.html" class="extype" name="pogoprotos.map.fort.FortType">FortType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@type:pogoprotos.map.fort.FortType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.lenses.Updatable#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A"></a>
+      <a id="update((Lens[FortData,FortData])⇒Mutation[FortData]*):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="ms">ms: (<span class="extype" name="com.trueaccord.lenses.Lens">Lens</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>, <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]) ⇒ <span class="extype" name="com.trueaccord.lenses.Mutation">Mutation</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]*</span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@update(ms:com.trueaccord.lenses.package.Lens[A,A]=&gt;com.trueaccord.lenses.package.Mutation[A]*):A" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Updatable</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#withActiveFortModifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withActiveFortModifier(__v:com.google.protobuf.ByteString):pogoprotos.map.fort.FortData"></a>
+      <a id="withActiveFortModifier(ByteString):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withActiveFortModifier</span><span class="params">(<span name="__v">__v: <span class="extype" name="com.google.protobuf.ByteString">ByteString</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withActiveFortModifier(__v:com.google.protobuf.ByteString):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withCooldownCompleteTimestampMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withCooldownCompleteTimestampMs(__v:Long):pogoprotos.map.fort.FortData"></a>
+      <a id="withCooldownCompleteTimestampMs(Long):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withCooldownCompleteTimestampMs</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withCooldownCompleteTimestampMs(__v:Long):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withEnabled" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withEnabled(__v:Boolean):pogoprotos.map.fort.FortData"></a>
+      <a id="withEnabled(Boolean):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withEnabled</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withEnabled(__v:Boolean):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withGuardPokemonCp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withGuardPokemonCp(__v:Int):pogoprotos.map.fort.FortData"></a>
+      <a id="withGuardPokemonCp(Int):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withGuardPokemonCp</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withGuardPokemonCp(__v:Int):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withGuardPokemonId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withGuardPokemonId(__v:pogoprotos.enums.PokemonId):pogoprotos.map.fort.FortData"></a>
+      <a id="withGuardPokemonId(PokemonId):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withGuardPokemonId</span><span class="params">(<span name="__v">__v: <a href="../../enums/PokemonId.html" class="extype" name="pogoprotos.enums.PokemonId">PokemonId</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withGuardPokemonId(__v:pogoprotos.enums.PokemonId):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withGymPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withGymPoints(__v:Long):pogoprotos.map.fort.FortData"></a>
+      <a id="withGymPoints(Long):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withGymPoints</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withGymPoints(__v:Long):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withId(__v:String):pogoprotos.map.fort.FortData"></a>
+      <a id="withId(String):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withId</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withId(__v:String):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withIsInBattle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withIsInBattle(__v:Boolean):pogoprotos.map.fort.FortData"></a>
+      <a id="withIsInBattle(Boolean):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withIsInBattle</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withIsInBattle(__v:Boolean):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withLastModifiedTimestampMs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withLastModifiedTimestampMs(__v:Long):pogoprotos.map.fort.FortData"></a>
+      <a id="withLastModifiedTimestampMs(Long):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withLastModifiedTimestampMs</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withLastModifiedTimestampMs(__v:Long):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withLatitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withLatitude(__v:Double):pogoprotos.map.fort.FortData"></a>
+      <a id="withLatitude(Double):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withLatitude</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withLatitude(__v:Double):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withLongitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withLongitude(__v:Double):pogoprotos.map.fort.FortData"></a>
+      <a id="withLongitude(Double):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withLongitude</span><span class="params">(<span name="__v">__v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withLongitude(__v:Double):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withLureInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withLureInfo(__v:pogoprotos.map.fort.FortLureInfo):pogoprotos.map.fort.FortData"></a>
+      <a id="withLureInfo(FortLureInfo):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withLureInfo</span><span class="params">(<span name="__v">__v: <a href="FortLureInfo.html" class="extype" name="pogoprotos.map.fort.FortLureInfo">FortLureInfo</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withLureInfo(__v:pogoprotos.map.fort.FortLureInfo):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withOwnedByTeam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withOwnedByTeam(__v:pogoprotos.enums.TeamColor):pogoprotos.map.fort.FortData"></a>
+      <a id="withOwnedByTeam(TeamColor):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withOwnedByTeam</span><span class="params">(<span name="__v">__v: <a href="../../enums/TeamColor.html" class="extype" name="pogoprotos.enums.TeamColor">TeamColor</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withOwnedByTeam(__v:pogoprotos.enums.TeamColor):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withRenderingType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withRenderingType(__v:pogoprotos.map.fort.FortRenderingType):pogoprotos.map.fort.FortData"></a>
+      <a id="withRenderingType(FortRenderingType):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withRenderingType</span><span class="params">(<span name="__v">__v: <a href="FortRenderingType.html" class="extype" name="pogoprotos.map.fort.FortRenderingType">FortRenderingType</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withRenderingType(__v:pogoprotos.map.fort.FortRenderingType):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withSponsor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withSponsor(__v:pogoprotos.map.fort.FortSponsor):pogoprotos.map.fort.FortData"></a>
+      <a id="withSponsor(FortSponsor):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSponsor</span><span class="params">(<span name="__v">__v: <a href="FortSponsor.html" class="extype" name="pogoprotos.map.fort.FortSponsor">FortSponsor</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withSponsor(__v:pogoprotos.map.fort.FortSponsor):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="pogoprotos.map.fort.FortData#withType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withType(__v:pogoprotos.map.fort.FortType):pogoprotos.map.fort.FortData"></a>
+      <a id="withType(FortType):FortData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withType</span><span class="params">(<span name="__v">__v: <a href="FortType.html" class="extype" name="pogoprotos.map.fort.FortType">FortType</a></span>)</span><span class="result">: <a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@withType(__v:pogoprotos.map.fort.FortType):pogoprotos.map.fort.FortData" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeDelimitedTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeDelimitedTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeDelimitedTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeDelimitedTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@writeDelimitedTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li><li name="pogoprotos.map.fort.FortData#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit"></a>
+      <a id="writeTo(CodedOutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="_output__">_output__: <span class="extype" name="com.google.protobuf.CodedOutputStream">CodedOutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@writeTo(_output__:com.google.protobuf.CodedOutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a> → GeneratedMessage</dd></dl></div>
+    </li><li name="com.trueaccord.scalapb.GeneratedMessage#writeTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTo(output:java.io.OutputStream):Unit"></a>
+      <a id="writeTo(OutputStream):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTo</span><span class="params">(<span name="output">output: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#pogoprotos.map.fort.FortData@writeTo(output:java.io.OutputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GeneratedMessage</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.trueaccord.lenses.Updatable">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.lenses.Updatable">Updatable</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.Message">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.Message">Message</span>[<a href="" class="extype" name="pogoprotos.map.fort.FortData">FortData</a>]</h3>
+            </div><div class="parent" name="com.trueaccord.scalapb.GeneratedMessage">
+              <h3>Inherited from <span class="extype" name="com.trueaccord.scalapb.GeneratedMessage">GeneratedMessage</span></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
