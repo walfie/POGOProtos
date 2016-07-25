@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "com.trueaccord.scalapb" %% "scalapb-runtime" % "0.5.34" % ScalaPbPlugin.protobufConfig
 )
 
-// ScalaPB settings
+// ScalaPB plugin
 import com.trueaccord.scalapb.ScalaPbPlugin
 
 ScalaPbPlugin.protobufSettings
@@ -28,9 +28,16 @@ inConfig(ScalaPbPlugin.protobufConfig) {
 }
 
 // sbt-site plugin
-enablePlugins(SiteScaladocPlugin)
+site.settings
+site.includeScaladoc()
 
-// sbt-release
+// sbt-ghpages plugin
+ghpages.settings
+git.remoteRepo := "git@github.com:walfie/pogoprotos.scala.git"
+
+// sbt-release plugin
+// Remove `pushChanges` from the release process, since it requires an upstream.
+// After a release, commits/tags will need to be pushed manually.
 import ReleaseTransformations._
 releaseProcess -= pushChanges
 
