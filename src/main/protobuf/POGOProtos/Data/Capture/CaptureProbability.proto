@@ -5,7 +5,7 @@ option java_package = "pogoprotos.data.capture";
 import "POGOProtos/Inventory/Item/ItemId.proto";
 
 message CaptureProbability {
-	repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1;
-	repeated float capture_probability = 2;
+	repeated .POGOProtos.Inventory.Item.ItemId pokeball_type = 1 [packed=true];
+	repeated float capture_probability = 2 [packed=true];
 	double reticle_difficulty_scale = 12;
 }
