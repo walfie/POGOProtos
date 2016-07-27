@@ -11,7 +11,7 @@ Add to `build.sbt` (sbt version >=0.13.6):
 resolvers += Resolver.bintrayRepo("walfie", "maven")
 
 libraryDependencies ++= Seq(
-  "com.github.walfie" %% "pogoprotos" % "0.0.1"
+  "com.github.walfie" %% "pogoprotos" % "1.0.0"
 )
 ```
 
