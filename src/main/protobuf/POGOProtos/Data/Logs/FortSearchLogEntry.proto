@@ -3,7 +3,6 @@ package POGOProtos.Data.Logs;
 option java_package = "pogoprotos.data.logs";
 
 import "POGOProtos/Inventory/Item/ItemData.proto";
-import "POGOProtos/Enums/PokemonId.proto";
 
 message FortSearchLogEntry {
 	.POGOProtos.Data.Logs.FortSearchLogEntry.Result result = 1;
